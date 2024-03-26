@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import pandas as pd
-from utils.utils import parse_commit_as_hyperlink_by_project
+from .utils import parse_commit_as_hyperlink_by_project
 import json
 import logging
 from timeit import default_timer as timer

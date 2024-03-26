@@ -3,14 +3,17 @@ This file is modified version of original experimentBudget.py of FAST-R.
 It is used to run all FAST-R algorithms in all commits of target project in given Budget scenario(loose or strict)
 """
 
+import sys
+
+sys.path.append("../")
+
 import math
 import os
 import pickle
-import sys
 import fastr
 import metric
 from pathlib import Path
-from utils import strip_commit_url
+from utils.utils import strip_commit_url
 import json
 from config import REPEATS, RESULTS_DIR, TESTCASES_DIR
 from utils.helpers import (
@@ -23,10 +26,12 @@ import json
 
 # Budget File contains pre-computed budget for loose setting
 from config import BUDGET_FILE
-all_projects_loose_budget = json.load(open(f"{BUDGET_FILE}"))
 
-# Check if algorithm should run 
-# NOTE: It is handy to run single algortihm during debugging
+budget_data = json.load(open(f"{BUDGET_FILE}"))
+
+
+# Check if algorithm should run
+# NOTE: It is handy to run only a single algortihm during debugging
 def run_algorithm(enforce_algorithm, enforced_algo, algo):
     if not enforce_algorithm:
         return True
@@ -57,18 +62,7 @@ def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
             def all_(x):
                 return x
 
-            def sqrt_(x):
-                return int(math.sqrt(x)) + 1
-
-            def log_(x):
-                return int(math.log(x, 2)) + 1
-
-            def one_(x):
-                return 1
-
-            inputFile = "{}/{}/{}-{}-ts.txt".format(
-                TESTCASES_DIR, prog, prog, commit
-            )
+            inputFile = "{}/{}/{}-{}-ts.txt".format(TESTCASES_DIR, prog, prog, commit)
             outpath = "{}/strict/{}/{}/".format(RESULTS_DIR, prog, commit)
             sPath = outpath + "selections/"
             tPath = outpath + "measures/"
@@ -170,7 +164,7 @@ def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
     # Loose Scenario
     if setting == "loose":
         # Budget for loose scenario
-        MIN_PERCENTAGE_OF_TEST_PRESERVED = all_projects_loose_budget[prog]["Min Budget"]
+        MIN_PERCENTAGE_OF_TEST_PRESERVED = budget_data[prog]["Min Budget"]
 
         for commit in commits_list:
             commit = strip_commit_url(commit)
@@ -190,18 +184,7 @@ def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
             def all_(x):
                 return x
 
-            def sqrt_(x):
-                return int(math.sqrt(x)) + 1
-
-            def log_(x):
-                return int(math.log(x, 2)) + 1
-
-            def one_(x):
-                return 1
-
-            inputFile = "{}/{}/{}-{}-ts.txt".format(
-                TESTCASES_DIR, prog, prog, commit
-            )
+            inputFile = "{}/{}/{}-{}-ts.txt".format(TESTCASES_DIR, prog, prog, commit)
             outpath = "{}/loose/{}/{}/".format(RESULTS_DIR, prog, commit)
             sPath = outpath + "selections/"
             tPath = outpath + "measures/"

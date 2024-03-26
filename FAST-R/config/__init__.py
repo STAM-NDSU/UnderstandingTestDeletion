@@ -1,5 +1,6 @@
 DELETED_TESTS_DIR = "../inputs/deleted-tests"
 TESTCASES_DIR = "../inputs/testcases"
+ROOT_DIR = "../"
 RESULTS_DIR = "../results"
 REPEATS = 50  # No. of times the computation step is repeated; 50 to ensure better predictability
 BUDGET_FILE = "../artifacts/budget.json"
