@@ -1,0 +1,12 @@
+venv
+.env
+.DS_Store
+.idea
+**/__pycache__
+.mypy_cache
+pyd*
+nohup.out.
+testdelbench/inputs/projects/*
+!testdelbench/inputs/projects/README.MD
+testdelbench/inputs/RefactoringMiner/artifacts/*
+!testdelbench/inputs/RefactoringMiner/README.MD
