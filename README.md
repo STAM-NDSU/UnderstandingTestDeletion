@@ -157,6 +157,79 @@ Executing this step will filter out identified refactored tests from candidate d
 
 ### FAST-R
 
+Please follow the given steps to evaluate FAST-R appraoches on developer deleted tests.
+
+1. **Change directory to deltestbench:** From root directory, run the following command:
+
+```
+    cd FAST
+```
+
+2. **Prepare input:**
+
+FAST-R alrogithms are used to reduce original test suite of parent commits of test deletion commits. For this, first of all we need to process
+test classes present in the instance of parent commits of all the projects under study and compile into a single `text` file.
+
+The original test suites of parent test deletion commits of all projects except `CTS` used for the reduction are present [here](/FAST/inputs/testcases/).
+Due to large size of `text` file of CTS, we have not shipped the prepared test suite files with the repository. However, you can run following command locally
+to generate test suites for the all the projects provided projects are downloaded and configured correctly following above steps in `testdelbench`.
+
+```
+    cd input/prepare/testcases.py
+```
+
+This generates compiled text file, for each parent test deletion commit, containing all of test classes present in the parent commit. Results are stored [here](/FAST/inputs/testcases/) on which FAST-R algorithms perform reduction.
+
+
+`deleted-tests` repository contains the confirmed deleted tests and test deletion commits of each project obtained after performing all of the steps in `deltestbench` and manual validation. The files inside this repository are required to perfrom analysis in Step 6.
+
+4. **Compute Budget for Loose Scenario:** Before performing reduction in loose setting, we need to calculate the budget i.e size of reduced test suite for the project. Run the following command to compute budget for all of the projects.
+
+```
+    python3 tools/loose_budget_calc.py 
+```
+
+You can configure projects to be considered for evaluation by changing `PROJECTS` in the config file [here](/FAST/config/__init__.py)
+
+
+5. **Perform Reduction:** To perfrom reduction on test suites using FAST-R algorithms, run the following command
+
+```
+    python3 tools/experiment.py <prog> <setting>
+```
+Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose. 
+
+For example: Running following cmd for gson in strict setting will generate 50 * 4 reduced test suites(one for each of the FAST-R algorithm and reduction happens for 50 times for each approach) for each of the 23 original test suites. In gson, there
+are 23 test deletion commits in which whole test class is deleted and also, 23 unique parent commits of those test deletion commits.
+
+```
+    python3 tools/experiment.py gson strict
+```
+
+**Note: To perform reduction in the loose setting, please confirm you have followed Step 3 properly.**
+
+6. **Analyze Results:** After performing reduction, we run the following command to get the results of the reduction.
+
+```
+    python3 tools/analyzer/main.py <prog> <setting>
+```
+Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose. 
+
+
+For example: Running following cmd for gson in strict setting will generate a json file [here](/FAST/artifacts/strict/gson.json). 
+This contains information regarding how many deleted test class and redundant tests can each of the 4 FAST-R algortihms identify.
+
+```
+    python3 tools/experiment.py gson strict
+```
+
+7. **Generate Summary:** To generate summary of the effectiveness of all 4 FAST-R algorighms to identify deleted test class and redundant tests, 
+please run the following command:
+```
+    python3 tools/experiment.py gson strict
+```
+
+
 ## Struggling to reproduce results ?
 
 ---

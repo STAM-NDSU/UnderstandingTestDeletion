@@ -19,7 +19,7 @@ PROJECTS = [
     "jfreechart",
     "joda-time",
     "pmd",
-    "cts",
+    # "cts", // Comment out this if you have CTS locally downloaded and prepared test suites of parent TDC for reduction
 ]
 
 COMPILED_RESULTS_FILEPATH = "./artifacts/compiled_results.json"
