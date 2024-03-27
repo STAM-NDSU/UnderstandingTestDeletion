@@ -8,7 +8,7 @@ The artifact repository for the paper titled:
 > _Authors:_ Suraj Bhatta, Ajay Kumar Jha  
 > _Conference:_
 
-In this paper, we establish a benchmark comprising 24,431 manually confirmed deleted tests spanning 2,125 test deletion commits across 7 open-source projects. Furthermore, we conduct an evaluation of the effectiveness of FAST-R appraoches to identifying developer-deleted tests leading to permanent test deletion. The projects studied include: [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
+In this paper, we establish a benchmark comprising 24,431 manually confirmed deleted tests spanning 2,125 test deletion commits across 7 open-source projects. Furthermore, we conduct an evaluation of the effectiveness of FAST-R appraoches to identifying developer deleted tests leading to permanent test deletion. The projects studied include: [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
 
 
 ## Contents
@@ -150,11 +150,11 @@ Executing this step will generate a csv file containing candidate deleted tests 
     python tools/testdel.py <program> step3
 ```
 
-**Note: Before executing this command, please ensure you have run commands in steps 3 and 4. Additionally, make sure you have followed instruction provided [here](/deltestbench/inputs/RefactoringMiner/README.md) and placed artifacts file generated using RefactoringMiner inside the directory [deltestbench/inputs](/deltestbench/inputs/RefactoringMiner/artifacts/)y.**
+**Note: Before executing this command, please ensure you have run commands in steps 3 and 4. Additionally, make sure you have followed instruction provided [here](/deltestbench/inputs/RefactoringMiner/README.md) and placed artifacts file generated using RefactoringMiner inside the directory [deltestbench/inputs](/deltestbench/inputs/RefactoringMiner/artifacts/).**
 
 Executing this step will filter out identified refactored tests from candidate deleted tests and generate a csv file inside the directory [deltestbench/results/](/deltestbench/results/). The file will be located within the respective specified `program` directory and named as `hydrated_<program>-step3.csv`.
 
-6. **Manual Validation:** After filtering out the refactored tests from candidate deleted tests, we do the manual validation of the tests is conducted. The two authors of the paper perform manual validation independently and then compile the results, resolving any disagreements. The results are located within the directory [deltestbench/artifacts](/deltestbench/artifacts/) .
+6. **Manual Validation:** After filtering out the refactored tests from candidate deleted tests, manual validation of the tests is conducted. For the paper, the two authors of the paper perform manual validation independently and then compile the results, resolving any disagreements. The results are located within the directory [deltestbench/artifacts](/deltestbench/artifacts/) .
 
 In the csv file, the record with `Final Result` set to `yes` indicates a developer deleted test that has been manually confirmed.
 

@@ -1,14 +1,14 @@
-This directory contains 7 open-source projects analyzed in our study. The projects are required as input to compute the candidate deleted tests and test deletion commits.
+## Download Projects
 
-Please follow the following steps
+To ensure the smooth computation of candidate deleted tests and test deletion commits, it's essential to download the studied 7 open-source projects and have them locally available. Here are the steps to follow:
 
-1. Checkout from root directory to projects directory
+1. **Navigate from root directory to the projects directory**
 
 ```
 cd deltestbench/inputs/projects
 ```
 
-2. Clone open-source projects
+2. **Clone the projects using the following commands:**
 
 ```
 git clone https://github.com/google/gson.git
@@ -20,4 +20,4 @@ git clone https://github.com/JodaOrg/joda-time.git
 git clone https://android.googlesource.com/platform/cts
 ```
 
-**Note: Instead of copying all of the projects, you can copy only a single project of which results you want to reproduce :) .**
+The studied 7 open-source projects should be downloaded inside the directory [/deltestben/inputs/projects](/deltestbench/inputs/projects/).
