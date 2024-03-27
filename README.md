@@ -18,7 +18,7 @@ The directory is structured as follows:
 
     UnderstandingTestDeletion/        This is the root directory of the repository.
     |
-    |--- FAST-R/        Implementation of evaluation of FAST-R algorithms to identify developer deleted tests.
+    |--- FAST/        Implementation of evaluation of FAST-R algorithms to identify developer deleted tests.
     |    |------ analyzer/      Scripts to analyze the generated reduced test suite and compute if algorithm can identify developer deleted tests
     |    |------ artifacts/
     |    |       |------ loose/     Analyzed results for FAST-R algorithms in loose setting
@@ -113,6 +113,7 @@ Please follow the given steps in correct order to identify test deletion commits
 The value of program should be either of `commons-lang`, `gson`, `commons-math`, `jfreechart`, `joda-time`, `pmd`, and `cts`.
 
 For example:
+
 ```
     python tools/testdel.py gson step1
 ```
