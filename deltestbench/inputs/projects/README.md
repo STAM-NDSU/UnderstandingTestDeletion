@@ -21,3 +21,5 @@ git clone https://android.googlesource.com/platform/cts
 ```
 
 The studied 7 open-source projects should be downloaded inside the directory [/deltestben/inputs/projects](/deltestbench/inputs/projects/).
+
+**NOTE: Prior to cloning, please ensure that your machine has sufficient available disk space.**
