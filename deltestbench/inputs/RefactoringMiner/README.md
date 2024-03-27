@@ -1,6 +1,9 @@
-The `artifacts` directory [here](/deltestbench/inputs/RefactoringMiner/artifacts/) contains `json` files generated using [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) for open-source projects analyzed in our study. These files contain identified refactorings across the history of commits of the repository The filename is in the format `<project-name>.json`.
+## RefactoringMiner for Refactoring Detection
 
-Please follow the following steps to generate artifacts using RefactoringMiner.
+We rely on [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) to identify refactorings applied throughout the commit history of the projects under study. Upon execution, this tool generates a `json` file named `<project-name>.json` containing detected refactorings. These files are stored within the directory [deltestbench/inputs/RefactoringMiner/artifacts](/deltestbench/inputs/RefactoringMiner/artifacts/). Subsequently, the canidate deleted tests identified as refactorings are then filtered out from the pool before manual validation.
+
+
+Please follow the given steps to generate a `json` file containing refactorings.
 
 1. **Clone RefactoringMiner:**
 
@@ -8,14 +11,14 @@ Please follow the following steps to generate artifacts using RefactoringMiner.
     git clone https://github.com/tsantalis/RefactoringMiner.git
 ```
 
-2. **Navigate to RefactoringMiner directory:**
+2. **Navigate to the RefactoringMiner directory:**
 
 ```
     cd RefactoringMiner
 ```
 
 3. **Build the RefactoringMiner project**
-   Please run the following command from the root directory of RefactoringMiner:
+   Execute the following command from the root directory of RefactoringMiner:
 
 ```
     ./gradlew jar
@@ -23,29 +26,32 @@ Please follow the following steps to generate artifacts using RefactoringMiner.
 ```
 
 4. **Navigate to the RefactoringMiner build directory:**
-   The build jar file is typically located inside `build/libs` directory from root directory of RefactoringMiner.
-   Please run following command from the root directory of RefactoringMiner.
+   The build jar file is typically located inside `build/libs` directory from the root directory of RefactoringMiner.
+   Run the following command from the root directory of RefactoringMiner:
 
 ```
     cd build/libs
 
 ```
 
-**NOTE: The build Jar file path could be different for you. Please check and customize the path accordingly.**
+**NOTE: The path to the build Jar file may vary based on your system configuration. Please verify and adjust the path as needed.**
 
 5. **Run RefactoringMiner:**
-   Use the following command to execute RefactoringMiner with the appropriate parameters.
+   Execute the following command to run RefactoringMiner:
 
 ```
     java -jar RefactoringMiner.jar -output JSON -gitrepo <path-to-repo> > <repo-name>.json
 ```
 
-Please replace `<path-to-repo>` with the path to your locally cloned project repository that you would like to analyze. Also, replace `<path-to-repo>` with name of the repository.
+Please ensure to replace `<path-to-repo>` with the path to your locally cloned project repository. Also, replace `<path-to-repo>` with name of the repository.
 
-6. **Move output file to artifacts directory**
-   Finally, please move the generated result file into artifacts directory [here](/deltestbench/inputs/RefactoringMiner/artifacts/)
+**NOTE: For each of the 7 studied projects, we will need to generate a separate `json` file using RefactoringMiner. Please follow the steps provided above for each project individually to generate the corresponding `json` file.**
 
-### Skip Generating Files using RefactoringMiner
+6. **Move the generated `json` file to artifacts directory**
+Please relocate the generated `json` file into [deltestbench/inputs/RefactoringMiner/artifacts](/deltestbench/inputs/RefactoringMiner/artifacts/) directory. This step ensures that the files are in the correct location for further processing.
 
-We have run the RefactoringMiner for all of the 7 projects and made the result file available [here](https://drive.google.com/drive/folders/1oA-78s9DiWCpmZ2iiO40SpxRNCLNfzF2?usp=sharing).
-You can directly download those files and place into the artifacts directory.
+### Skipping File Generation with RefactoringMiner
+
+We have already executed RefactoringMiner for all 7 projects and provided the result files for download [here](https://drive.google.com/drive/folders/1oA-78s9DiWCpmZ2iiO40SpxRNCLNfzF2?usp=sharing). Simply download these files and place them into the [deltestbench/inputs/RefactoringMiner/artifacts](/deltestbench/inputs/RefactoringMiner/artifacts/) directory as instructed.
+
+**NOTE: Due to the large size of these files, we did not include them in this git repository.**

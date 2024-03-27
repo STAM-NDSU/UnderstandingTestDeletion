@@ -95,7 +95,7 @@ If it is not installed, download and install python from [here](https://www.pyth
 
 ### [deltestbench](/deltestbench/)
 
-Please follow the given steps in correct order to identify test deletion commits and deleted tests.
+To successfully identify test deletion commits and deleted tests, please follow these steps in the correct order:
 
 **Steps:**
 
@@ -158,7 +158,7 @@ Executing this step will filter out identified refactored tests from candidate d
 
 In the csv file, the record with `Final Result` set to `yes` indicates a developer deleted test that has been manually confirmed.
 
-### FAST-R
+### [FAST-R](/FAST/)
 
 Please follow the given steps to evaluate FAST-R appraoches on developer deleted tests.
 
@@ -232,18 +232,16 @@ This contains information regarding how many deleted test class and redundant te
     python3 tools/experiment.py gson strict
 ```
 
-## Struggling to reproduce results ?
+## Have Trouble Reproducing Results?
+
+If you are struggling to reproduce the results, don't hesitate to file an issue, and we'll address it promptly.
+
+## Frequently Asked Questions (FAQ)
 
 
 
-Please file an issue and we will get back to you as soon as possible.
-
-## FAQ
-
-
-
-- **Can I use it to identify candidate test deletion commits and deleted tests from projects other than the studied projects in the paper?**
-Yes. The steps used in this project can be used to identify any candidate test deletion commits and deleted tests in any other Java projects. However, make sure to sure RefactoringMiner on the new project and place inside inside input directory [here](/deltestbench/inputs/RefactoringMiner/artifacts/). The candidate deleted tests are then confirmed as valid deleted tests via manual validation.
+- **Can I use this tool to identify candidate test deletion commits and deleted tests from projects other than the ones studied in the paper?**
+Yes, absolutely. The steps outlined in this project can be used to identify candidate test deletion commits and deleted tests in any Java projects. However, ensure to run RefactoringMiner on the new project and place the artifacts inside inside the input directory [here](/deltestbench/inputs/RefactoringMiner/artifacts/). Subsequently, the candidate deleted tests are confirmed as valid deleted tests through manual validation.
 
 ## Contributors
 
