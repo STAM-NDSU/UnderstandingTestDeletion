@@ -1,1 +1,3 @@
-# FAST-R EVALUATION ON DEVELOPER DELETED TESTS
+# FAST
+
+[**FAST**](/FAST/) : This section focuses on evaluating the effectiveness of FAST-R approaches in identifying developer deleted tests. It includes input, configuration, artifacts, and scripts essential for conducting the evaluation.
