@@ -11,8 +11,8 @@ sys.path.append("../")
 import os.path
 from pathlib import Path
 import pandas as pd
-from testdelbench.config import RESULTS_DIR
-from testdelbench.utils.utils import (
+from deltestbench.config import RESULTS_DIR
+from deltestbench.utils.utils import (
     parse_commit_hash_by_project,
     get_change_id_from_commit_msg,
 )

@@ -6,12 +6,12 @@ from .core import (
     analyze_true_test_cases_deletion_in_commit_file_javaparser,
     get_removed_test_functions_regex_only,
 )
-from testdelbench.config import (
+from deltestbench.config import (
     COMMIT_START_DATETIME,
     COMMIT_END_DATETIME,
     JAVA_FILE_EXT,
 )
-from testdelbench.utils.utils import (
+from deltestbench.utils.utils import (
     is_candidate_test_file,
     format_commit_datetime,
     get_full_commit_url,

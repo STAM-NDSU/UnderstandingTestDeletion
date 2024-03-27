@@ -14,10 +14,10 @@ if __name__ == "__main__":
     os.environ["STEP"] = step
 
 
-from testdelbench.utils.helpers import export_to_csv
-from testdelbench.analyzer.analyzer import get_removed_test_functions_details
-from testdelbench.utils.utils import *
-from testdelbench.config import (
+from deltestbench.utils.helpers import export_to_csv
+from deltestbench.analyzer.analyzer import get_removed_test_functions_details
+from deltestbench.utils.utils import *
+from deltestbench.config import (
     PROJECT,
     REPO_PATH,
     TARGET_BRANCH,

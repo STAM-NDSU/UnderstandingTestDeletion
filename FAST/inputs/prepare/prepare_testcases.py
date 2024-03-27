@@ -10,14 +10,14 @@ import sys
 sys.path.append("../")
 
 import os
-from testdelbench.utils.utils import is_candidate_test_file, strip_commit_url
+from deltestbench.utils.utils import is_candidate_test_file, strip_commit_url
 import json
 from pathlib import Path
 import pandas as pd
 from functools import reduce
 from FAST.config import (
     PROJECTS,
-    TESTDELBENCH_PROJECTS_DIR,
+    deltestbench_PROJECTS_DIR,
     DELETED_TESTS_DIR,
     TESTCASES_DIR,
 )
@@ -26,7 +26,7 @@ current_state = os.getcwd()
 
 for project in PROJECTS:
     print("Project: ", project)
-    REPO_PATH = f"{TESTDELBENCH_PROJECTS_DIR}/{project}"
+    REPO_PATH = f"{deltestbench_PROJECTS_DIR}/{project}"
     deleted_tests_filepath = Path(f"{DELETED_TESTS_DIR}/{project}.csv")
     if not os.path.exists(f"{REPO_PATH}"):
         print(
@@ -98,7 +98,7 @@ for project in PROJECTS:
         project_dir = f"{TESTCASES_DIR}/{project}"
         if not os.path.exists(project_dir):
             os.makedirs(project_dir)
-        
+
         testsuite_path = f"{project_dir}/{project}-{commit}-ts.txt"
         testsuite_history_path = f"{project_dir}/{project}-{commit}-tsh.json"
         print(testsuite_history_path)

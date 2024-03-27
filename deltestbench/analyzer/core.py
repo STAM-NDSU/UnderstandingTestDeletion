@@ -1,13 +1,13 @@
 import re
 from typing import List, Collection, Tuple, Optional
 from pydriller.domain.commit import ModifiedFile
-from testdelbench.utils.utils import (
+from deltestbench.utils.utils import (
     cleanup_function_prototype,
     get_function_name_from_prototype,
     get_test_function_name_from_prototype,
     get_function_name_from_prototype_with_space_before,
 )
-from testdelbench.config.pattern import Pattern
+from deltestbench.config.pattern import Pattern
 
 
 #  Analyze commit files to detect tests cases removed

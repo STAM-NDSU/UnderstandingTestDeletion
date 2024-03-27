@@ -6,7 +6,7 @@ venv
 .mypy_cache
 pyd*
 nohup.out.
-testdelbench/inputs/projects/*
-!testdelbench/inputs/projects/README.MD
-testdelbench/inputs/RefactoringMiner/artifacts/*
-!testdelbench/inputs/RefactoringMiner/README.MD
+deltestbench/inputs/projects/*
+!deltestbench/inputs/projects/README.MD
+deltestbench/inputs/RefactoringMiner/artifacts/*
+!deltestbench/inputs/RefactoringMiner/README.MD

@@ -1,5 +1,5 @@
 """ 
-This utility file prettifies csv files generated for all the steps of testdelbench 
+This utility file prettifies csv files generated for all the steps of deltestbench 
 for all the projects. Thus, prevents congestion of data during manual inspection for easier reading.
 
 This utility file removes redundant commit information such as messgae,
@@ -15,7 +15,7 @@ import os.path
 from pathlib import Path
 import pandas as pd
 
-from testdelbench.config import RESULTS_DIR
+from deltestbench.config import RESULTS_DIR
 
 PROJECT_ARTIFACTS = [
     {

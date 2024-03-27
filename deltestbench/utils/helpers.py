@@ -1,5 +1,5 @@
 import csv
-from testdelbench.utils.utils import *
+from deltestbench.utils.utils import *
 
 
 # Exports data as csv file in the configured output directory

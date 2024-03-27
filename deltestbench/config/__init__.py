@@ -2,10 +2,10 @@ import os
 from enum import Enum
 import inflection
 from datetime import datetime
-from testdelbench.config.branch import Branch
-from testdelbench.config.remote_base_url import RemoteBaseUrl
+from deltestbench.config.branch import Branch
+from deltestbench.config.remote_base_url import RemoteBaseUrl
 
-# Root directory for testdelbench
+# Root directory for deltestbench
 ROOT_DIR = "./"
 # Name of the project
 PROJECT = os.getenv("PROJECT", "gson")

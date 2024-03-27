@@ -25,7 +25,7 @@ The directory is structured as follows:
     |    |       |------ strict/    Analyzed results for FAST-R algorithms in strict setting
     |    |------ config/        Configuration files
     |    |------ inputs/
-    |    |       |------ deleted-tests/     Test deletion commits and deleted tests information gatherd from testdelbench
+    |    |       |------ deleted-tests/     Test deletion commits and deleted tests information gatherd from deltestbench
     |    |       |------ prepare/   Scripts to prepare original test suites of parent commits of for reduction
     |    |       |------ testcases/     Original test suites of parent commits of test deletion commits prepared for redcution
     |    |------ results/
@@ -34,7 +34,7 @@ The directory is structured as follows:
     |    |------ tools/     Scripts to execute via command
     |    |------ utils/     Utility and helper functions
     |
-    |--- testdelbench/        Implementation of process to identify deleted tests and test deletion commits.
+    |--- deltestbench/        Implementation of process to identify deleted tests and test deletion commits.
     |    |------ analyzer/    Core scripts to compute candidate test deletion commit and deleted tests
     |    |------ artifacts/   Compiled results from manual validation of candidate deleted tests
     |    |------ config/      Configuration files
@@ -50,7 +50,7 @@ The directory is structured as follows:
 
 The repository is divided into two groups:
 
-- **testdelbench** : It contains all the input, configuration, results, artifacts and script files used to identify deleted tests and test deletion commits.
+- **deltestbench** : It contains all the input, configuration, results, artifacts and script files used to identify deleted tests and test deletion commits.
 - **FAST-R** : Similary, it contains all the files and configurations required to evaluate the effectiveness of FAST-R appraoches to identify developer deleted tests.
 
 ## Reproducing Results
@@ -86,7 +86,7 @@ If it is not installed, download and install python from [here](https://www.pyth
     pip install -r requirements.txt
 ```
 
-### testdelbench
+### deltestbench
 
 Please follow the given steps in correct order to identify test deletion commits and deleted tests from open-source projects under study.
 
@@ -94,13 +94,13 @@ Please follow the given steps in correct order to identify test deletion commits
 
 1. **Prepare input:**
 
-- Please follow the instructions [here](/testdelbench/inputs/projects/README.md) to download the projects. Projects are required to be present in local machine for the other steps to run properly.
-- Also, we filter out refactored tests using [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner). Please follow the instructions [here](/testdelbench/inputs/RefactoringMiner/README.md) to run the RefactoringMiner on the downloaded projects and generate the csv file that contains identified refactors throughout the commit history of the project.
+- Please follow the instructions [here](/deltestbench/inputs/projects/README.md) to download the projects. Projects are required to be present in local machine for the other steps to run properly.
+- Also, we filter out refactored tests using [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner). Please follow the instructions [here](/deltestbench/inputs/RefactoringMiner/README.md) to run the RefactoringMiner on the downloaded projects and generate the csv file that contains identified refactors throughout the commit history of the project.
 
-2. **Change directory to testdelbench:** From root directory, run the following command:
+2. **Change directory to deltestbench:** From root directory, run the following command:
 
 ```
-    cd testdelbench
+    cd deltestbench
 ```
 
 3. **Generate Candidate Commits:** To generate candidate test deletion commits, run the following command:
@@ -118,7 +118,7 @@ For example:
     python tools/testdel.py gson step1
 ```
 
-Executing this step will generate a csv file containing candidate test deletion commits inside [testdelbench/results/](/testdelbench/results/). The file will be presented inside the respective
+Executing this step will generate a csv file containing candidate test deletion commits inside [deltestbench/results/](/deltestbench/results/). The file will be presented inside the respective
 specified `program` directory named as `{program}-step1.csv`.
 
 **IMPORTANT: For projects commons-lang, joda-time and cts, we need to filter out outliers from candidate test deletionc commits. It refines the results of the preceding step and narrows down test deletion commits to be considered for identifying candidate deleted tests.**
@@ -139,7 +139,7 @@ Executing this commoand will generate a csv file named as `hydrated_<program>-st
 
 **Note: Please ensure that you have executed command in Step 3 before running this command.**
 
-Executing this step will generate a csv file containing candidate deleted tests inside [testdelbench/results/](/testdelbench/results/). The file will be presented inside the respective
+Executing this step will generate a csv file containing candidate deleted tests inside [deltestbench/results/](/deltestbench/results/). The file will be presented inside the respective
 specified `program` directory named as `hydrated_<program>-step2.csv`.
 
 5. **Filter Refactored Tests:** To filter out refactored tests from candidate deleted tests, run the following command:
@@ -148,11 +148,11 @@ specified `program` directory named as `hydrated_<program>-step2.csv`.
     python tools/testdel.py <program> step3
 ```
 
-**Note: Please run commands in step 3 and 4 before executing this command. Also, ensure you have followed instruction [here](/testdelbench/inputs/RefactoringMiner/README.md) and placed artifacts file generated using RefactoringMiner inside [testdelbench/inputs](/testdelbench/inputs/RefactoringMiner/artifacts/) directory.**
+**Note: Please run commands in step 3 and 4 before executing this command. Also, ensure you have followed instruction [here](/deltestbench/inputs/RefactoringMiner/README.md) and placed artifacts file generated using RefactoringMiner inside [deltestbench/inputs](/deltestbench/inputs/RefactoringMiner/artifacts/) directory.**
 
-Executing this step will filter out identified refactored tests from candidate deleted tests and generate a csv file inside [testdelbench/results/](/testdelbench/results/). The file will be presented inside the respective specified `program` directory named as `hydrated_<program>-step3.csv`.
+Executing this step will filter out identified refactored tests from candidate deleted tests and generate a csv file inside [deltestbench/results/](/deltestbench/results/). The file will be presented inside the respective specified `program` directory named as `hydrated_<program>-step3.csv`.
 
-6. **Manual Validation:** After filtering out the refactored tests from candidate deleted tests, we do the manual validation of the tests. The two authors of the paper did manual validation independently and then compiled the results resolving any disagreements. The results are present inside the [testdelbench/artifacts](/testdelbench/artifacts/) directory.
+6. **Manual Validation:** After filtering out the refactored tests from candidate deleted tests, we do the manual validation of the tests. The two authors of the paper did manual validation independently and then compiled the results resolving any disagreements. The results are present inside the [deltestbench/artifacts](/deltestbench/artifacts/) directory.
    In the csv file, the record with `Final Result` as `yes` indicates a manually confirmed developer deleted test.
 
 ### FAST-R

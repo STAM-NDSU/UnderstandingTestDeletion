@@ -28,4 +28,4 @@ COMPILED_RESULTS_FILEPATH = "./artifacts/compiled_results.json"
 # Using the same value as used by authors of FAST-R algorithms
 REPEATS = 50
 
-TESTDELBENCH_PROJECTS_DIR = "../testdelbench/inputs/projects"
+deltestbench_PROJECTS_DIR = "../deltestbench/inputs/projects"

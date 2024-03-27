@@ -6,8 +6,8 @@ import re
 import os
 from datetime import datetime
 from dateutil import tz
-from testdelbench.config.pattern import Pattern
-from testdelbench.config import DATETIME_FORMAT, COMMIT_BASE_URL
+from deltestbench.config.pattern import Pattern
+from deltestbench.config import DATETIME_FORMAT, COMMIT_BASE_URL
 
 
 # Checks if file is a candidate file
