@@ -64,15 +64,21 @@ else:
             )
 
             # Check if step 1 file is refined for the project [Use refined file if available]
-            if not os.path.exists(refined_file_path) and not os.path.exists(file_path):
-                print(
-                    "Files from step 1 do not exist. Please perfrom step 1 before perfoming to step 2."
-                )
-                exit(0)
+            if not os.path.exists(file_path):
+                print("Files from step 1 do not exist.")
+                print("Please perfrom step 1 before perfoming to step 2.")
+                exit(1)
 
-            # Check if step 1 file is refined for the project [Use refined file if available]
-            if os.path.exists(f"{refined_file_path}"):
-                file_path = refined_file_path
+            # Use refined step 1 file for commons-lang, joda-time and cts
+            if project in ["commons-lang", "joda-time", "cts"]:
+                if not os.path.exists(refined_file_path):
+                    print(
+                        f"Refined file from step 1 does not exits for project {project}"
+                    )
+                    print(f"Please execute: python tools/refine_step1.py {project}")
+                    exit(1)
+                else:
+                    file_path = refined_file_path
 
             with open(file_path, "r") as a:
                 step1_hydrated_df = pd.read_csv(f"{file_path}")
