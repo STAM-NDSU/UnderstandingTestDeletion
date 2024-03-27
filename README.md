@@ -1,61 +1,66 @@
 # UnderstandingTestDeletion
 
----
+
 
 The artifact repository for the paper titled:
 
 > Understanding Test Deletion in Continious Integgration  
-> _Authors:_ Suraj Bhatta, Ajay Jha
+> _Authors:_ Suraj Bhatta, Ajay Kumar Jha  
 > _Conference:_
 
-In this paper, we create a benchmark of manually confirmed 24,431 deleted tests across 2,125 test deletion commits across 7 open-source projects. Additionally, we evaluate the effectiveness of FAST-R appraoches to identify developer deleted tests for permanent test deletion. The projects studied are [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [Android Compatibililty Test Suite (CTS)](https://android.googlesource.com/platform/cts).
+In this paper, we create a benchmark of manually confirmed 24,431 deleted tests across 2,125 test deletion commits across 7 open-source projects. Additionally, we evaluate the effectiveness of FAST-R appraoches to identify developer deleted tests for permanent test deletion. The projects studied are [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
+
+
+## Contents
+
+The repository is divided into two groups:
+
+- [**deltestbench**](/deltestbench/) : It is used to identify test deletion commits and deleted tests.
+- [**FAST**](/FAST/) : It is used to evaluate the effectiveness of FAST-R appraoches to identify developer deleted tests.
+
+Both group contain necessary input, configuration, artifacts and scripts files that are required to achieve respective objectives.
+
 
 ## Directory Structure
-
----
 
 The directory is structured as follows:
 
     UnderstandingTestDeletion/        This is the root directory of the repository.
     |
-    |--- FAST/        Implementation of evaluation of FAST-R algorithms to identify developer deleted tests.
-    |    |------ analyzer/      Scripts to analyze the generated reduced test suite and compute if algorithm can identify developer deleted tests
-    |    |------ artifacts/
-    |    |       |------ loose/     Analyzed results for FAST-R algorithms in loose setting
-    |    |       |------ strict/    Analyzed results for FAST-R algorithms in strict setting
-    |    |------ config/        Configuration files
-    |    |------ inputs/
-    |    |       |------ deleted-tests/     Test deletion commits and deleted tests information gatherd from deltestbench
-    |    |       |------ prepare/   Scripts to prepare original test suites of parent commits of for reduction
-    |    |       |------ testcases/     Original test suites of parent commits of test deletion commits prepared for redcution
-    |    |------ results/
-    |    |       |------ loose/     Reduced test-suites using FAST-R algorithms in loose setting
-    |    |       |------ strict/    Reduced test-suites using FAST-R algorithms in strict setting
+    |--- deltestbench/        Implementation of process to identify deleted tests and test deletion commits.
+    |    |------ analyzer/    Core logic to compute candidate test deletion commit and deleted tests
+    |    |------ artifacts/   Compiled results from manual validation of candidate deleted tests
+    |    |------ config/      Configuration files
+    |    |------ inputs/      Input files
+    |    |       |------ projects/     Locally downloaded 7 studied open-source projects
+    |    |       |------ RefactoringMiner/
+    |    |       |       |------ artifacts/     Refactorings identified for 7 projects under study using RefactoringMiner
+    |    |------ results/       Candidate test deletion commits and candidate deleted tests generated across different steps
     |    |------ tools/     Scripts to execute via command
     |    |------ utils/     Utility and helper functions
     |
-    |--- deltestbench/        Implementation of process to identify deleted tests and test deletion commits.
-    |    |------ analyzer/    Core scripts to compute candidate test deletion commit and deleted tests
-    |    |------ artifacts/   Compiled results from manual validation of candidate deleted tests
-    |    |------ config/      Configuration files
-    |    |------ inputs/
-    |    |       |------ projects/     7 studied open-source projects downloaded locally
-    |    |       |------ RefactoringMiner/
-    |    |       |       |------ artifacts/     Refactorings identified for the projects under study using RefactoringMiner
-    |    |------ results/       Candidate test deletion commits and candidate deleted tests generated for projects for across different steps
-    |    |------ tools/     Scripts to execute via command
+    |--- FAST/        Implementation of evaluation of FAST-R algorithms to identify developer deleted tests.
+    |    |------ analyzer/      Analyze if algorithm can identify developer deleted tests i.e excude them in reduced test suites
+    |    |------ artifacts/     Results after evaluating FAST-R approaches
+    |    |       |------ loose/     Results after FAST-R algorithms in loose setting
+    |    |       |------ strict/    Results after FAST-R algorithms in strict setting
+    |    |------ config/        Configuration files
+    |    |------ inputs/    Input files
+    |    |       |------ deleted-tests/     Test deletion commits and deleted tests information gatherd from deltestbench
+    |    |       |------ prepare/   Scripts to prepare original test suites of parent commits of for reduction
+    |    |       |------ testcases/     Original test suites of parent commits of test deletion commits prepared for redcution
+    |    |------ results/      Reduced test suites using FAST-R
+    |    |       |------ loose/     Reduced test-suites using FAST-R algorithms in loose setting
+    |    |       |------ strict/    Reduced test-suites using FAST-R algorithms in strict setting
+    |    |------ tools/     Scripts to execute to reduce test suties using FAST-R algorithms and analyze results
+    |    |       |------ analyzer/     Scripts to analyze the performance of FAST-R algorithms
     |    |------ utils/     Utility and helper functions
 
-### Contents
 
-The repository is divided into two groups:
 
-- **deltestbench** : It contains all the input, configuration, results, artifacts and script files used to identify deleted tests and test deletion commits.
-- **FAST-R** : Similary, it contains all the files and configurations required to evaluate the effectiveness of FAST-R appraoches to identify developer deleted tests.
 
 ## Reproducing Results
 
----
 
 1. **Install Python:** To run the project, python should be installed on your machine.
    Check if it is installed or not using following command:
@@ -180,26 +185,25 @@ to generate test suites for the all the projects provided projects are downloade
 
 This generates compiled text file, for each parent test deletion commit, containing all of test classes present in the parent commit. Results are stored [here](/FAST/inputs/testcases/) on which FAST-R algorithms perform reduction.
 
-
 `deleted-tests` repository contains the confirmed deleted tests and test deletion commits of each project obtained after performing all of the steps in `deltestbench` and manual validation. The files inside this repository are required to perfrom analysis in Step 6.
 
 4. **Compute Budget for Loose Scenario:** Before performing reduction in loose setting, we need to calculate the budget i.e size of reduced test suite for the project. Run the following command to compute budget for all of the projects.
 
 ```
-    python3 tools/loose_budget_calc.py 
+    python3 tools/loose_budget_calc.py
 ```
 
 You can configure projects to be considered for evaluation by changing `PROJECTS` in the config file [here](/FAST/config/__init__.py)
-
 
 5. **Perform Reduction:** To perfrom reduction on test suites using FAST-R algorithms, run the following command
 
 ```
     python3 tools/experiment.py <prog> <setting>
 ```
-Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose. 
 
-For example: Running following cmd for gson in strict setting will generate 50 * 4 reduced test suites(one for each of the FAST-R algorithm and reduction happens for 50 times for each approach) for each of the 23 original test suites. In gson, there
+Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose.
+
+For example: Running following cmd for gson in strict setting will generate 50 \* 4 reduced test suites(one for each of the FAST-R algorithm and reduction happens for 50 times for each approach) for each of the 23 original test suites. In gson, there
 are 23 test deletion commits in which whole test class is deleted and also, 23 unique parent commits of those test deletion commits.
 
 ```
@@ -213,35 +217,35 @@ are 23 test deletion commits in which whole test class is deleted and also, 23 u
 ```
     python3 tools/analyzer/main.py <prog> <setting>
 ```
-Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose. 
 
+Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose.
 
-For example: Running following cmd for gson in strict setting will generate a json file [here](/FAST/artifacts/strict/gson.json). 
+For example: Running following cmd for gson in strict setting will generate a json file [here](/FAST/artifacts/strict/gson.json).
 This contains information regarding how many deleted test class and redundant tests can each of the 4 FAST-R algortihms identify.
 
 ```
     python3 tools/experiment.py gson strict
 ```
 
-7. **Generate Summary:** To generate summary of the effectiveness of all 4 FAST-R algorighms to identify deleted test class and redundant tests, 
-please run the following command:
+7. **Generate Summary:** To generate summary of the effectiveness of all 4 FAST-R algorighms to identify deleted test class and redundant tests,
+   please run the following command:
+
 ```
     python3 tools/experiment.py gson strict
 ```
 
-
 ## Struggling to reproduce results ?
 
----
+
 
 Please file an issue and we will get back to you as soon as possible.
 
 ## FAQ
 
----
 
-- **Can I use it to identify test deletion commits and deleted tests from projects other than the studied projects in the paper?**
-  No. However, you can use the steps to identify candidate deleted tests and candidate test deletion commits. The candidate deleted tests should be confirmed as valid deleted tests via manual validation.
+
+- **Can I use it to identify candidate test deletion commits and deleted tests from projects other than the studied projects in the paper?**
+Yes. The steps used in this project can be used to identify any candidate test deletion commits and deleted tests in any other Java projects. However, make sure to sure RefactoringMiner on the new project and place inside inside input directory [here](/deltestbench/inputs/RefactoringMiner/artifacts/). The candidate deleted tests are then confirmed as valid deleted tests via manual validation.
 
 ## Contributors
 
