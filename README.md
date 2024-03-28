@@ -15,10 +15,9 @@ In this paper, we establish a benchmark comprising 24,431 manually confirmed del
 
 The repository is divided into two groups:
 
-- [**deltestbench**](/deltestbench/) : This section is dedicated to identifying test deletion commits and deleted tests.
-    -   Contains input, configuration, artifacts, and scripts necessary for this purpose.
-- [**FAST**](/FAST/) : This section focuses on evaluating the effectiveness of FAST-R approaches in identifying developer deleted tests.
-    -   Includes input, configuration, artifacts, and scripts essential for conducting the evaluation.
+- [**deltestbench**](/deltestbench/) : This section is dedicated to identifying test deletion commits and deleted tests. Contains input, configuration, artifacts, and scripts necessary for this purpose.
+
+- [**FAST**](/FAST/) : This section focuses on evaluating the effectiveness of FAST-R approaches in identifying developer deleted tests. Includes input, configuration, artifacts, and scripts essential for conducting the evaluation.
 
 
 ## Directory Structure
@@ -62,14 +61,14 @@ The directory is structured as follows:
 ## Reproducing Results
 
 
-1. **Install Python:** To replicate the experiment results, python should be installed on your machine.
-   Check if it is installed or not using following command:
+1. **Install Python:** To replicate the experiment results, Python should be installed on your machine.
+   Check if it is installed or not using the following command:
 
 ```
    python --version
 ```
 
-If it is not installed, download and install python from [here](https://www.python.org/downloads/).
+If it is not installed, download and install Python from [here](https://www.python.org/downloads/).
 
 2. **Clone the repository:** Download this repository using following command:
 
@@ -100,7 +99,7 @@ To successfully identify test deletion commits and deleted tests, please follow 
 1. **Prepare input:**
 
 - Please follow the instructions provided [here](/deltestbench/inputs/projects/README.md) to download the required projects. It is essential to have these projects present locally to execute subsequent steps smoothly.
-- Additionally, we utilize [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) to filter out refactored tests. Kindly follow the guidelines outlined [here](/deltestbench/inputs/RefactoringMiner/README.md) to run the RefactoringMiner on the projects cloned locally. This process generates a csv file containing identified refactors across the commit history of each project.
+- Additionally, we utilize [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) to filter out refactored tests. Kindly follow the guidelines outlined [here](/deltestbench/inputs/RefactoringMiner/README.md) to run the RefactoringMiner on the projects cloned locally. This process generates a csv file for each project containing identified refactorings across the commit history of each project.
 
 2. **Change directory to deltestbench:** From root directory, run the following command:
 
@@ -242,13 +241,10 @@ If you are struggling to reproduce the results, don't hesitate to file an issue,
 
 ## Frequently Asked Questions (FAQ)
 
-
-
 - **Can I use this tool to identify candidate test deletion commits and deleted tests from projects other than the ones studied in the paper?**
+
 Yes, absolutely. The steps outlined in this project can be used to identify candidate test deletion commits and deleted tests in any Java projects. However, ensure to run RefactoringMiner on the new project and place the artifacts inside inside the input directory [here](/deltestbench/inputs/RefactoringMiner/artifacts/). Subsequently, the candidate deleted tests are confirmed as valid deleted tests through manual validation.
 
 ## Contributors
-
----
 
 Suraj Bhatta and Ajay Kumar Jha.
