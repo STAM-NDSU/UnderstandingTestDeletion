@@ -20,8 +20,6 @@ The repository is divided into two groups:
 - [**FAST**](/FAST/) : This section focuses on evaluating the effectiveness of FAST-R approaches in identifying developer deleted tests.
     -   Includes input, configuration, artifacts, and scripts essential for conducting the evaluation.
 
-Both group contain necessary input, configuration, artifacts and scripts files that are required to achieve respective objectives.
-
 
 ## Directory Structure
 
@@ -162,75 +160,81 @@ In the csv file, the record with `Final Result` set to `yes` indicates a develop
 
 Please follow the given steps to evaluate FAST-R appraoches on developer deleted tests.
 
-1. **Change directory to deltestbench:** From root directory, run the following command:
+**Steps:**
+
+1. **Change directory to FAST:** Navigate to the FAST directory from the root directory by running the following command:
 
 ```
     cd FAST
 ```
 
-2. **Prepare input:**
+2. **Prepare Input:**
 
-FAST-R alrogithms are used to reduce original test suite of parent commits of test deletion commits. For this, first of all we need to process
-test classes present in the instance of parent commits of all the projects under study and compile into a single `text` file.
-
-The original test suites of parent test deletion commits of all projects except `CTS` used for the reduction are present [here](/FAST/inputs/testcases/).
-Due to large size of `text` file of CTS, we have not shipped the prepared test suite files with the repository. However, you can run following command locally
-to generate test suites for the all the projects provided projects are downloaded and configured correctly following above steps in `testdelbench`.
+FAST-R alrogithms are utilized to reduce test suites of parent commits of test deletion commits. To accomplish this, we first need to process the
+test classes present in the instance of parent commits of all the projects under study and compile them into a single `text` file.
+The original test suites of parent test deletion commits of all projects except `cts` are available in the directory [FAST/inputs/testcases/](/FAST/inputs/testcases/).
+Due to large size of `text` file of `cts`, we have not included the prepared test suite files with the repository. However, you can generate test suites for all the projects by running the following command: 
 
 ```
     cd input/prepare/testcases.py
 ```
+**NOTE: Please ensure that the projects are downloaded and configured correctly following the mentioned Step 1 in the section [testdelbench](#deltestbench)**
 
-This generates compiled text file, for each parent test deletion commit, containing all of test classes present in the parent commit. Results are stored [here](/FAST/inputs/testcases/) on which FAST-R algorithms perform reduction.
+This command generates a text file for each parent test deletion commit, containing all of test classes present in the parent commit. The results are stored within the directory [/FAST/inputs/testcases/](/FAST/inputs/testcases/), on which FAST-R algorithms perform reduction.
 
-`deleted-tests` repository contains the confirmed deleted tests and test deletion commits of each project obtained after performing all of the steps in `deltestbench` and manual validation. The files inside this repository are required to perfrom analysis in Step 6.
+The [/FAST/inputs/deleted-tests/](/FAST/inputs/deleted-tests/) directory contains the confirmed deleted tests and test deletion commits of each project obtained after performing all the steps in [testdelbench](#deltestbench). The files are named `project`.csv and are required for the further processing.
 
-4. **Compute Budget for Loose Scenario:** Before performing reduction in loose setting, we need to calculate the budget i.e size of reduced test suite for the project. Run the following command to compute budget for all of the projects.
+4. **Compute Budget for Loose Scenario:** Before conducting test suite reduction in loose setting, it is necessary to calculate the budget i.e the size of the reduced test suite for each project. Execute the following command to compute budget for all projects:
 
 ```
     python3 tools/loose_budget_calc.py
 ```
 
-You can configure projects to be considered for evaluation by changing `PROJECTS` in the config file [here](/FAST/config/__init__.py)
+You can configure projects to be considered for evaluation by modifying `PROJECTS` variable in the configuration file located [here](/FAST/config/__init__.py)
 
-5. **Perform Reduction:** To perfrom reduction on test suites using FAST-R algorithms, run the following command
+5. **Perform Reduction:** To conduct reduction on test suites using FAST-R algorithms, execute the following command:
 
 ```
     python3 tools/experiment.py <prog> <setting>
 ```
 
-Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose.
+Replace `<prog>` with the name of one of projects and `<setting>` with either `strict` or `loose`.
+**IMPORTANT: Please ensure that you perform this step for all of the projects for both the `strict` and `loose` settings.**
 
-For example: Running following cmd for gson in strict setting will generate 50 \* 4 reduced test suites(one for each of the FAST-R algorithm and reduction happens for 50 times for each approach) for each of the 23 original test suites. In gson, there
-are 23 test deletion commits in which whole test class is deleted and also, 23 unique parent commits of those test deletion commits.
+For example: Running the following command for `gson` project in `strict` setting will generate 50 \* 4 reduced test suites(one for each of the FAST-R algorithm, with reduction happening 50 times for each approach) for each of the 23 original test suites. In gson, there are 23 test deletion commits in which the whole test class is deleted, and also 23 unique parent commits of those test deletion commits.
 
 ```
     python3 tools/experiment.py gson strict
 ```
 
-**Note: To perform reduction in the loose setting, please confirm you have followed Step 3 properly.**
+**Note: To perform reduction in the loose setting, please ensure you have followed the instructions in the Step 3 properly.**
 
-6. **Analyze Results:** After performing reduction, we run the following command to get the results of the reduction.
+6. **Analyze Results:** After performing reduction, execute the following command to obtain the results of the reduction.
 
 ```
     python3 tools/analyzer/main.py <prog> <setting>
 ```
 
-Please replace `<prog>` with the name of one of project and `<setting>` with either strict or loose.
+Replace `<prog>` with the name of one of the projects and `<setting>` with either `strict` or `loose`.
 
-For example: Running following cmd for gson in strict setting will generate a json file [here](/FAST/artifacts/strict/gson.json).
-This contains information regarding how many deleted test class and redundant tests can each of the 4 FAST-R algortihms identify.
-
-```
-    python3 tools/experiment.py gson strict
-```
-
-7. **Generate Summary:** To generate summary of the effectiveness of all 4 FAST-R algorighms to identify deleted test class and redundant tests,
-   please run the following command:
+For example, running following command for `gson` in `strict` setting will generate a `json` file inside the directory [/FAST/artifacts/strict/](/FAST/artifacts/strict/).
+This file is named `gson.json` and contains information regarding how many deleted test classes and redundant tests each of the 4 FAST-R algortihms can identify.
 
 ```
     python3 tools/experiment.py gson strict
 ```
+
+**NOTE: The files generated from our study after executing this step for loose and strict setting are located inside the directory [FAST/artifacts/loose](/FAST/artifacts/loose) and [FAST/artifacts/loose](/FAST/artifacts/loose) respectively.**
+
+7. **Generate Summary:** To generate a summary of the effectiveness of all 4 FAST-R algorithms in identifying deleted test classes and redundant tests, please run the following command:
+
+```
+    python3 tools/compile_results.py
+```
+
+This command compiles the results generated for all of the FAST-R algorithms in both strict and loose setting and creates a single `compiled_results.json` file within the [FAST/artifacts](/FAST/artifacts/) directory
+
+**NOTE: The file generated from our study after executing this step is located [here](/FAST/artifacts/compiled_results.json).**
 
 ## Have Trouble Reproducing Results?
 
