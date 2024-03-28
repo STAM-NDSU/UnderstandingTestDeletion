@@ -8,7 +8,7 @@ The artifact repository for the paper titled:
 > _Authors:_ Suraj Bhatta, Ajay Kumar Jha  
 > _Conference:_
 
-In this paper, we establish a benchmark comprising 24,431 manually confirmed deleted tests spanning 2,125 test deletion commits across 7 open-source projects. Furthermore, we conduct an evaluation of the effectiveness of FAST-R appraoches to identifying developer deleted tests leading to permanent test deletion. The projects studied include: [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
+In this paper, we establish a benchmark comprising 24,431 manually confirmed deleted tests spanning 2,125 test deletion commits across 7 open-source projects. Furthermore, we conduct an evaluation of the effectiveness of FAST-R approaches in identifying developer deleted tests for permanent test deletion. The projects studied include: [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
 
 
 ## Contents
