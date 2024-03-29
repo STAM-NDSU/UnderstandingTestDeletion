@@ -61,9 +61,7 @@ def get_removed_test_functions_regex_only(file) -> List:
 #  Get list of removed test functions (beginning with 'test') from file changes using regex pattern
 def get_removed_test_functions1(file_changes: str) -> List:
     removed_testcases = []
-    matched_grp = re.finditer(
-        Pattern.REMOVED_TEST_FUNCTION_PROTOTYPE.value, file_changes
-    )
+    matched_grp = re.finditer(Pattern.REMOVED_TEST_FUNCTION.value, file_changes)
     if matched_grp:
         raw_removed_testcases = [x.group() for x in matched_grp]
 
@@ -80,9 +78,7 @@ def get_removed_test_functions1(file_changes: str) -> List:
 #  Get list of removed test functions (having annotation @Test) from file changes using regex pattern
 def get_removed_test_functions2(file_changes: str) -> List:
     removed_testcases = []
-    matched_grp = re.finditer(
-        Pattern.REMOVED_TEST_FUNCTION_PROTOTYPE2.value, file_changes
-    )
+    matched_grp = re.finditer(Pattern.REMOVED_TEST_FUNCTION2.value, file_changes)
     if matched_grp:
         raw_removed_testcases = [x.group() for x in matched_grp]
 

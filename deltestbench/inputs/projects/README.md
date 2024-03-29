@@ -23,3 +23,4 @@ git clone -–single-branch https://android.googlesource.com/platform/cts
 We mentione `--single-branch` option to clone only the primary branch of the projects. The studied 7 open-source projects should be downloaded inside the directory [/deltestben/inputs/projects](/deltestbench/inputs/projects/).
 
 **NOTE: Prior to cloning, please ensure that your machine has sufficient available disk space.**
+
