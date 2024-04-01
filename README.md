@@ -13,12 +13,13 @@ In this paper, we establish a benchmark comprising 24,431 manually confirmed del
 
 ## Contents
 
-The repository is divided into two groups:
+The repository is divided into three groups:
 
 - [**deltestbench**](/deltestbench/) : This section is dedicated to identifying test deletion commits and deleted tests. Contains input, configuration, artifacts, and scripts necessary for this purpose.
 
 - [**FAST**](/FAST/) : This section focuses on evaluating the effectiveness of FAST-R approaches in identifying developer deleted tests. Includes input, configuration, artifacts, and scripts essential for conducting the evaluation.
 
+- [**emperical-findings**](/emperical-findings/) : This section contains the emperical findings of our study.
 
 ## Directory Structure
 
@@ -54,8 +55,8 @@ The directory is structured as follows:
     |    |------ tools/     Scripts to execute for reducing test suties using FAST-R algorithms and analyzing results.
     |    |       |------ analyzer/     Scripts to analyze the performance of FAST-R algorithms.
     |    |------ utils/     Utility and helper functions.
-
-
+    |
+    |--- emperical-findings/  Results of our experiments
 
 
 ## Reproducing Results
