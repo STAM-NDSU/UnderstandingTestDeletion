@@ -53,7 +53,7 @@ We grouped the deleted tests by commit hash for each project. We then anaylzed t
 - [jfreechart](../emperical-finding/rq3/data/jfreechart.csv)
 - [joda-time](../emperical-finding/rq3/data/joda-time.csv)
 - [pmd](../emperical-finding/rq3/data/pmd.csv)
-- [commons-lang](../emperical-finding/rq3/data/commons-lang.csv)
+- [cts](../emperical-finding/rq3/data/cts.csv)
 
 
 
@@ -65,21 +65,20 @@ Percentage of tests deleted:
 
 <img src="/emperical-findings/rq3/img/percentage-of-tests.png" width="500" />
 
-**Note: The above violin plots are chopped off to clearly display mean and median values and thus might not represent actual maximum values.**
+**NOTE: The above violin plots are chopped off to clearly display mean and median values and thus might not represent actual maximum values.**
 
 ### RQ4: RQ4: At what levels of granularity do developers delete tests?
 We analyzed the deleted tests and compiled if the test is deleted along with class or individually. The compiled results obtained for this research question can be found [here](/emperical-findings/rq4/data/results.csv).
 
-
-<img src="/emperical-findings/rq4/testdeletion-granularity.png" width="500" />
-
+<img src="/emperical-findings/rq4/img/testdeletion-granularity.png" width="500" />
 
 
-### RQ5
+
+## RQ5: How many of the obsolete and redundant developers’ deleted tests do TSR approaches identify?
 
 We evaluated effectiveness of FAST-R approches: `FAST++`, `FAS-CS`, `FAST-pw` and `FAST-all` to idenfity developer deleted tests from deltestbench in two different setting: `strict` and `loose`. 
 
-Dataset used for this research question:
+
 
 <img src="/emperical-findings/rq5/dataset.png" width="500" />
 
@@ -113,3 +112,5 @@ Percentage of deleted tests excluded in reduced test suites:
 Percentage of redundant tests excluded in reduced test suites:
 
 <img src="/emperical-findings/rq5/redundant-tests-fastr.png" width="1100" />
+
+**NOTE: Percentage of deleted tests and redundant tests excluded in reduced test suites were not reported in paper for FAST-CS and FAST-pw due to lack of space.**
