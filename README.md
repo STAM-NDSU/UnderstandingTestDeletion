@@ -4,9 +4,9 @@
 
 The artifact repository for the paper titled:
 
-> Understanding Test Deletion in Continious Integgration  
-> _Authors:_ 
-> _Conference:_
+> Understanding Test Deletion in Continuous Integgration  
+> _Authors:_  
+> _Conference:_ 
 
 In this paper, we establish a benchmark comprising 24,431 manually confirmed deleted tests spanning 2,125 test deletion commits across 7 open-source projects. Furthermore, we conduct an evaluation of the effectiveness of FAST-R approaches in identifying developer deleted tests for permanent test deletion. The projects studied include: [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
 
@@ -57,6 +57,10 @@ The directory is structured as follows:
     |    |------ utils/     Utility and helper functions.
     |
     |--- emperical-findings/  Results of our experiments
+
+## Emperical Results and Data
+
+The results of our experiments as well as the datasets used for our statistical analysis are available [here](/emperical-findings/).
 
 
 ## Reproducing Results
