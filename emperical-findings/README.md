@@ -2,13 +2,13 @@
 
 ### Projects Studied
 
-We select 7 open-source Java projects for our study.
+We selected 7 open-source Java projects for our study.
 
 <img src="/emperical-findings/img/projects-studied.png" width="800" />
 
 ### deltestbench
 
-We establish a benchmark of manually confirmed 24,431 deleted tests in 2,125 commits from seven projects. 
+We establish a benchmark comprising 24,431 manually confirmed developer deleted tests in 2,125 commits from the selected projects. 
 
 Results of individual projects:
 
@@ -27,7 +27,7 @@ Developer deleted tests spread across studied projects:
 
 ## RQ1: How many obsolete and redundant tests do developers delete in the projects?
 
-We analyzed test deletion commits from deltestbench to answer this research question. The compiled data set used to answer this research question is located [here](/emperical-findings/results).
+We analyzed test deletion commits from **deltestbench** to answer this question. The compiled dataset used is located [here](/emperical-findings/results).
 
 Obsolete and redundant tests across non-CTS projects:
 
@@ -35,8 +35,7 @@ Obsolete and redundant tests across non-CTS projects:
 
 ## RQ2: How often do developers delete tests?
 
-Similar to RQ1, we analyzed test deletion commits from deltestbench and grouped them by version and year. The compiled data set obtained for different versions of projects under 
-study is located [here](/emperical-findings/rq2/data/version/). Furthermore, the compiled data set obtained for different years is located [here](/emperical-findings/rq2/data/year/).
+Similar to RQ1, we analyzed test deletion commits and grouped them by version and year. The compiled datasets for different versions and years are located [here](/emperical-findings/rq2/data/version/) and [here](/emperical-findings/rq2/data/year/) respectively.
 
 
 <img src="/emperical-findings/rq2/img/testdeletion-frequency.png" width="1200" />
@@ -45,7 +44,7 @@ Graphs used for version are located [here](/emperical-findings/rq2/version/) and
 
 ## RQ3: How many tests do developers delete in a test deletion commit?
 
-We grouped the deleted tests by commit hash for each project. We then anaylzed test deletion commit and its parent and compiled following data set to answer this research questions.
+We grouped the deleted tests by commit hash for each project and compiled datasets to answer this question:
 
 - [commons-lang](../emperical-finding/rq3/data/commons-lang.csv)
 - [gson](../emperical-finding/rq3/data/gson.csv)
@@ -65,10 +64,10 @@ Percentage of tests deleted:
 
 <img src="/emperical-findings/rq3/img/percentage-of-tests.png" width="500" />
 
-**NOTE: The above violin plots are chopped off to clearly display mean and median values and thus might not represent actual maximum values.**
+**NOTE: The above violin plots are truncated from right to clearly display mean and median values and might not represent actual maximum values.**
 
-### RQ4: RQ4: At what levels of granularity do developers delete tests?
-We analyzed the deleted tests and compiled if the test is deleted along with class or individually. The compiled results obtained for this research question can be found [here](/emperical-findings/rq4/data/results.csv).
+## RQ4: At what levels of granularity do developers delete tests?
+We analyzed the deleted tests to determine if they were deleted along with class or individually. The compiled results can be found [here](/emperical-findings/rq4/data/results.csv).
 
 <img src="/emperical-findings/rq4/img/testdeletion-granularity.png" width="500" />
 
@@ -76,17 +75,16 @@ We analyzed the deleted tests and compiled if the test is deleted along with cla
 
 ## RQ5: How many of the obsolete and redundant developers’ deleted tests do TSR approaches identify?
 
-We evaluated effectiveness of FAST-R approches: `FAST++`, `FAS-CS`, `FAST-pw` and `FAST-all` to idenfity developer deleted tests from deltestbench in two different setting: `strict` and `loose`. 
+We evaluated effectiveness of FAST-R approches (`FAST++`, `FAS-CS`, `FAST-pw` and `FAST-all`) to idenfity developer deleted tests from **deltestbench** in two different setting: `strict` and `loose`. 
 
 
 
 <img src="/emperical-findings/rq5/dataset.png" width="500" />
 
 
-The results obtained for `strict` and `loose` setting are as belows:
 
+Results for `strict` scenario:
 
-**Strict Scenario**
 - [commons-lang](../FAST/artifacts/strict/commons-lang.csv)
 - [gson](../FAST/artifacts/strict/gson.csv)
 - [commons-math](../FAST/artifacts/strict/commons-math.csv)
@@ -96,7 +94,7 @@ The results obtained for `strict` and `loose` setting are as belows:
 - [cts](../FAST/artifacts/strict/cts.csv)
 
 
-**Loose Scenario**
+Results for `loose` scenario:
 - [commons-lang](../FAST/artifacts/loose/commons-lang.csv)
 - [gson](../FAST/artifacts/loose/gson.csv)
 - [commons-math](../FAST/artifacts/loose/commons-math.csv)
@@ -113,4 +111,4 @@ Percentage of redundant tests excluded in reduced test suites:
 
 <img src="/emperical-findings/rq5/redundant-tests-fastr.png" width="1100" />
 
-**NOTE: Percentage of deleted tests and redundant tests excluded in reduced test suites were not reported in paper for FAST-CS and FAST-pw due to lack of space.**
+**NOTE: Percentage of deleted tests and redundant tests excluded in reduced test suites were not reported in the paper for FAST-CS and FAST-pw due to lack of space.**
