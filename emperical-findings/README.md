@@ -8,7 +8,9 @@ We select 7 open-source Java projects for our study.
 
 ### deltestbench
 
-We establish a benchmark of manually confirmed 24,431 deleted tests in 2,125 commits from seven projects. Results of individual projects are listed below.
+We establish a benchmark of manually confirmed 24,431 deleted tests in 2,125 commits from seven projects. 
+
+Results of individual projects:
 
 - [commons-lang](../deltestbench/artifacts/commons-lang.csv)
 - [gson](../deltestbench/artifacts/gson.csv)
@@ -16,20 +18,22 @@ We establish a benchmark of manually confirmed 24,431 deleted tests in 2,125 com
 - [jfreechart](../deltestbench/artifacts/jfreechart.csv)
 - [joda-time](../deltestbench/artifacts/joda-time.csv)
 - [pmd](../deltestbench/artifacts/pmd.csv)
-- [commons-lang](../deltestbench/artifacts/commons-lang.csv)
+- [cts](../deltestbench/artifacts/cts.csv)
 
-The following pie-chart shows those manually confirmed deleted tests spread across studied projects:
 
-<img src="/emperical-findings/rq1/deleted-tests.png" width="500" />
+Developer deleted tests spread across studied projects:
 
-### RQ1: How many obsolete and redundant tests do developers delete in the projects?
+<img src="/emperical-findings/rq1/img/deleted-tests.png" width="500" />
 
-We analyzed test deletion commits from deltestbench to answer this research question. The compiled data set used to answer this research question is located [here](/emperical-findings/results)
-The following stacked horizontal bar graph shows 
+## RQ1: How many obsolete and redundant tests do developers delete in the projects?
 
-<img src="/emperical-findings/rq1/obsolete-and-redundant-tests.png" width="500" />
+We analyzed test deletion commits from deltestbench to answer this research question. The compiled data set used to answer this research question is located [here](/emperical-findings/results).
 
-### RQ2: How often do developers delete tests?
+Obsolete and redundant tests across non-CTS projects:
+
+<img src="/emperical-findings/rq1/img/obsolete-and-redundant-tests.png" width="500" />
+
+## RQ2: How often do developers delete tests?
 
 Similar to RQ1, we analyzed test deletion commits from deltestbench and grouped them by version and year. The compiled data set obtained for different versions of projects under 
 study is located [here](/emperical-findings/rq2/data/version/). Furthermore, the compiled data set obtained for different years is located [here](/emperical-findings/rq2/data/year/).
@@ -39,7 +43,8 @@ study is located [here](/emperical-findings/rq2/data/version/). Furthermore, the
 
 Graphs used for version are located [here](/emperical-findings/rq2/version/) and years are located [here](/emperical-findings/rq2/year/).
 
-### RQ3: How many tests do developers delete in a test deletion commit?
+## RQ3: How many tests do developers delete in a test deletion commit?
+
 We grouped the deleted tests by commit hash for each project. We then anaylzed test deletion commit and its parent and compiled following data set to answer this research questions.
 
 - [commons-lang](../emperical-finding/rq3/data/commons-lang.csv)
@@ -50,13 +55,17 @@ We grouped the deleted tests by commit hash for each project. We then anaylzed t
 - [pmd](../emperical-finding/rq3/data/pmd.csv)
 - [commons-lang](../emperical-finding/rq3/data/commons-lang.csv)
 
-Violin plots
 
-- Total number of tests deleted
+
+Total number of tests deleted:
+
 <img src="/emperical-findings/rq3/img/no-of-tests.png" width="500" />
 
-- Percentage of tests deleted
+Percentage of tests deleted:
+
 <img src="/emperical-findings/rq3/img/percentage-of-tests.png" width="500" />
+
+**Note: The above violin plots are chopped off to clearly display mean and median values and thus might not represent actual maximum values.**
 
 ### RQ4: RQ4: At what levels of granularity do developers delete tests?
 We analyzed the deleted tests and compiled if the test is deleted along with class or individually. The compiled results obtained for this research question can be found [here](/emperical-findings/rq4/data/results.csv).
@@ -68,37 +77,39 @@ We analyzed the deleted tests and compiled if the test is deleted along with cla
 
 ### RQ5
 
-We evaluated effectiveness of FAST-R approches: FAST++, FAS-CS, FAST-pw and FAST-all to idenfity developer deleted tests from deltestbench in two different setting: **strict** and **loose**. 
+We evaluated effectiveness of FAST-R approches: `FAST++`, `FAS-CS`, `FAST-pw` and `FAST-all` to idenfity developer deleted tests from deltestbench in two different setting: `strict` and `loose`. 
 
-Dataset used for this research question
+Dataset used for this research question:
 
 <img src="/emperical-findings/rq5/dataset.png" width="500" />
 
 
-The results obtained for **strict** and **loose** setting are as belows:
+The results obtained for `strict` and `loose` setting are as belows:
 
 
-#### Strict Scenario
+**Strict Scenario**
 - [commons-lang](../FAST/artifacts/strict/commons-lang.csv)
 - [gson](../FAST/artifacts/strict/gson.csv)
 - [commons-math](../FAST/artifacts/strict/commons-math.csv)
 - [jfreechart](../FAST/artifacts/strict/jfreechart.csv)
 - [joda-time](../FAST/artifacts/strict/joda-time.csv)
 - [pmd](../FAST/artifacts/strict/pmd.csv)
-- [commons-lang](../FAST/artifacts/strict/commons-lang.csv)
+- [cts](../FAST/artifacts/strict/cts.csv)
 
 
-#### Loose Scenario
+**Loose Scenario**
 - [commons-lang](../FAST/artifacts/loose/commons-lang.csv)
 - [gson](../FAST/artifacts/loose/gson.csv)
 - [commons-math](../FAST/artifacts/loose/commons-math.csv)
 - [jfreechart](../FAST/artifacts/loose/jfreechart.csv)
 - [joda-time](../FAST/artifacts/loose/joda-time.csv)
 - [pmd](../FAST/artifacts/loose/pmd.csv)
-- [commons-lang](../FAST/artifacts/loose/commons-lang.csv)
+- [cts](../FAST/artifacts/loose/cts.csv)
 
-- Percentage of deleted tests excluded in reduced test suites
-<img src="/emperical-findings/rq5/deleted-testclasses-fastr.png" width="500" />
+Percentage of deleted tests excluded in reduced test suites:
 
-- Percentage of redundant tests excluded in reduced test suites
-<img src="/emperical-findings/rq5/redundant-tests-fastr.png" width="500" />
+<img src="/emperical-findings/rq5/deleted-testclasses-fastr.png" width="1100" />
+
+Percentage of redundant tests excluded in reduced test suites:
+
+<img src="/emperical-findings/rq5/redundant-tests-fastr.png" width="1100" />
