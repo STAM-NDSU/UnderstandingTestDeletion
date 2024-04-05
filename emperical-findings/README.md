@@ -20,6 +20,7 @@ Results of individual projects:
 - [pmd](../deltestbench/artifacts/pmd.csv)
 - [cts](../deltestbench/artifacts/cts.csv)
 
+**NOTE: In the csv file, the record with `Final Result` set to `yes` indicates a developer deleted test that has been manually confirmed.**
 
 Developer deleted tests spread across studied projects:
 
