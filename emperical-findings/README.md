@@ -6,19 +6,19 @@ We selected 7 open-source Java projects for our study.
 
 <img src="/emperical-findings/img/projects-studied.png" width="800" />
 
-### deltestbench
+### deltest
 
-We establish a benchmark comprising 24,431 manually confirmed developer deleted tests in 2,125 commits from the selected projects. 
+We establish a benchmark comprising 24,431 manually confirmed developer deleted tests in 2,125 commits from the selected projects.
 
 Results of individual projects:
 
-- [commons-lang](../deltestbench/artifacts/commons-lang.csv)
-- [gson](../deltestbench/artifacts/gson.csv)
-- [commons-math](../deltestbench/artifacts/commons-math.csv)
-- [jfreechart](../deltestbench/artifacts/jfreechart.csv)
-- [joda-time](../deltestbench/artifacts/joda-time.csv)
-- [pmd](../deltestbench/artifacts/pmd.csv)
-- [cts](../deltestbench/artifacts/cts.csv)
+- [commons-lang](../deltest/artifacts/commons-lang.csv)
+- [gson](../deltest/artifacts/gson.csv)
+- [commons-math](../deltest/artifacts/commons-math.csv)
+- [jfreechart](../deltest/artifacts/jfreechart.csv)
+- [joda-time](../deltest/artifacts/joda-time.csv)
+- [pmd](../deltest/artifacts/pmd.csv)
+- [cts](../deltest/artifacts/cts.csv)
 
 **NOTE: In the csv file, the record with `Final Result` set to `yes` indicates a developer deleted test that has been manually confirmed.**
 
@@ -28,7 +28,7 @@ Developer deleted tests spread across studied projects:
 
 ## RQ1: How many obsolete and redundant tests do developers delete in the projects?
 
-We analyzed test deletion commits from **deltestbench** to answer this question. The compiled dataset used is located [here](/emperical-findings/results).
+We analyzed test deletion commits from **deltest** to answer this question. The compiled dataset used is located [here](/emperical-findings/results).
 
 Obsolete and redundant tests across non-CTS projects:
 
@@ -37,7 +37,6 @@ Obsolete and redundant tests across non-CTS projects:
 ## RQ2: How often do developers delete tests?
 
 Similar to RQ1, we analyzed test deletion commits and grouped them by version and year. The compiled datasets for different versions and years are located [here](/emperical-findings/rq2/data/version/) and [here](/emperical-findings/rq2/data/year/) respectively.
-
 
 <img src="/emperical-findings/rq2/img/testdeletion-frequency.png" width="1200" />
 
@@ -55,8 +54,6 @@ We grouped the deleted tests by commit hash for each project and compiled datase
 - [pmd](../emperical-finding/rq3/data/pmd.csv)
 - [cts](../emperical-finding/rq3/data/cts.csv)
 
-
-
 Total number of tests deleted:
 
 <img src="/emperical-findings/rq3/img/no-of-tests.png" width="500" />
@@ -68,21 +65,16 @@ Percentage of tests deleted:
 **NOTE: The above violin plots are truncated from right to clearly display mean and median values and might not represent actual maximum values.**
 
 ## RQ4: At what levels of granularity do developers delete tests?
+
 We analyzed the deleted tests to determine if they were deleted along with class or individually. The compiled results can be found [here](/emperical-findings/rq4/data/results.csv).
 
 <img src="/emperical-findings/rq4/img/testdeletion-granularity.png" width="500" />
 
-
-
 ## RQ5: How many of the obsolete and redundant developers’ deleted tests do TSR approaches identify?
 
-We evaluated effectiveness of FAST-R approches (`FAST++`, `FAS-CS`, `FAST-pw` and `FAST-all`) to idenfity developer deleted tests from **deltestbench** in two different setting: `strict` and `loose`. 
-
-
+We evaluated effectiveness of FAST-R approches (`FAST++`, `FAS-CS`, `FAST-pw` and `FAST-all`) to idenfity developer deleted tests from **deltest** in two different setting: `strict` and `loose`.
 
 <img src="/emperical-findings/rq5/dataset.png" width="500" />
-
-
 
 Results for `strict` scenario:
 
@@ -94,8 +86,8 @@ Results for `strict` scenario:
 - [pmd](../FAST/artifacts/strict/pmd.csv)
 - [cts](../FAST/artifacts/strict/cts.csv)
 
-
 Results for `loose` scenario:
+
 - [commons-lang](../FAST/artifacts/loose/commons-lang.csv)
 - [gson](../FAST/artifacts/loose/gson.csv)
 - [commons-math](../FAST/artifacts/loose/commons-math.csv)

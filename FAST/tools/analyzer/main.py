@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     if prog not in PROJECTS:
         print(
-            "Please provide a valid project name. It should be one of the 7 analyzed projects in the study."
+            "Please provide a valid project name. It should be one of the analyzed projects in the study with redundant tests."
         )
         exit(1)
 
@@ -34,5 +34,4 @@ if __name__ == "__main__":
         )
         exit(1)
 
-    for index, prog in enumerate(PROJECTS):
-        analyzer_main(prog, setting)
+    analyzer_main(prog, setting)

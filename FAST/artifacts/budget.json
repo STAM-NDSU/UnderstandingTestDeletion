@@ -1,93 +1,41 @@
 {
-  "commons-lang": {
-    "Min Budget": 92,
-    "Min Budget F": 92.45283018867924,
-    "Min data": {
-      "numOfTCS": 53,
-      "no_of_deleted_testfiles": 4,
-      "hash": "e329c3556ce0b4a87568f3783adc193719670560"
-    },
-    "Max Budget": 99,
-    "Max Budget F": 99.38650306748467,
-    "Average Budget": 97,
-    "Average Budget F": 97.84890580886731
-  },
-  "gson": {
-    "Min Budget": 89,
-    "Min Budget F": 89.41176470588236,
-    "Min data": {
-      "numOfTCS": 85,
-      "no_of_deleted_testfiles": 9,
-      "hash": "f777a192ee13fd59048aa7ba640cc8023051c89d"
-    },
-    "Max Budget": 99,
-    "Max Budget F": 99.1304347826087,
-    "Average Budget": 97,
-    "Average Budget F": 97.70340235826875
-  },
   "commons-math": {
-    "Min Budget": 29,
-    "Min Budget F": 29.03225806451613,
+    "Min Budget": 99,
+    "Min Budget F": 99.81060606060606,
     "Min data": {
-      "numOfTCS": 62,
-      "no_of_deleted_testfiles": 44,
-      "hash": "991078eceb9479657094c8a4ee062d816f132446"
+      "numOfTCS": 528,
+      "no_of_deleted_redundant_testfiles": 1,
+      "hash": "4bbe9ee5bdd1c7fb210b99ed3eee720e51a3b54f"
     },
     "Max Budget": 99,
-    "Max Budget F": 99.81481481481481,
-    "Average Budget": 97,
-    "Average Budget F": 98.20727957199276
-  },
-  "jfreechart": {
-    "Min Budget": 98,
-    "Min Budget F": 98.88579387186628,
-    "Min data": {
-      "numOfTCS": 359,
-      "no_of_deleted_testfiles": 4,
-      "hash": "07059fb93ed38147f8ded82ec8d1bf5400be1952"
-    },
-    "Max Budget": 99,
-    "Max Budget F": 99.71671388101983,
-    "Average Budget": 98,
-    "Average Budget F": 99.08916947103485
+    "Max Budget F": 99.81060606060606,
+    "Average Budget": 99,
+    "Average Budget F": 99.81060606060606
   },
   "joda-time": {
-    "Min Budget": 91,
-    "Min Budget F": 91.42857142857143,
+    "Min Budget": 99,
+    "Min Budget F": 99.07407407407408,
     "Min data": {
-      "numOfTCS": 70,
-      "no_of_deleted_testfiles": 6,
-      "hash": "f1a476f463c62b736e4a641aba4c59d9629814d1"
+      "numOfTCS": 108,
+      "no_of_deleted_redundant_testfiles": 1,
+      "hash": "6bdd176eed470329a73d7ee08498183e579cea60"
     },
     "Max Budget": 99,
-    "Max Budget F": 99.76744186046511,
-    "Average Budget": 96,
-    "Average Budget F": 96.65637977848667
+    "Max Budget F": 99.31972789115646,
+    "Average Budget": 99,
+    "Average Budget F": 99.19690098261526
   },
   "pmd": {
-    "Min Budget": 69,
-    "Min Budget F": 69.90291262135922,
+    "Min Budget": 95,
+    "Min Budget F": 95.45454545454545,
     "Min data": {
-      "numOfTCS": 309,
-      "no_of_deleted_testfiles": 93,
-      "hash": "24c9bb9de98f55520c53efc065a3b2581ad87fbf"
+      "numOfTCS": 22,
+      "no_of_deleted_redundant_testfiles": 1,
+      "hash": "e115567351dc4de84df8212d5c5b18775c72369d"
     },
     "Max Budget": 99,
     "Max Budget F": 99.88399071925754,
-    "Average Budget": 97,
-    "Average Budget F": 98.45624362752719
-  },
-  "cts": {
-    "Min Budget": 78,
-    "Min Budget F": 78.32,
-    "Min data": {
-      "numOfTCS": 3144,
-      "no_of_deleted_testfiles": 681,
-      "hash": "976971e382bbe4a0d6528bf5690baa449fde61ce"
-    },
-    "Max Budget": 99,
-    "Max Budget F": 99.93,
     "Average Budget": 98,
-    "Average Budget F": 98
+    "Average Budget F": 99.53210127433911
   }
 }

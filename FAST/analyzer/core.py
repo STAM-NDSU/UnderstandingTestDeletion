@@ -15,10 +15,10 @@ import json
 import os
 from FAST.config import RESULTS_DIR, REPEATS, ARTIFACTS_DIR, BUDGET_FILEPATH
 from FAST.utils.helpers import (
-    get_deleted_testcases_with_whole_file_df,
-    get_whole_file_test_deletion_parent_commits,
-    get_deleted_testfiles_in_test_deletion_commit_parent,
-    get_deleted_obsolete_and_redundant_testcases_by_project_and_removedfilepath,
+    get_redundant_deleted_testcases_with_whole_file_df,
+    get_whole_file_redundant_test_deletion_parent_commits,
+    get_deleted_redundant_testfiles_in_test_deletion_commit_parent,
+    get_redundant_deleted_testcases_by_project_and_removed_filepath,
 )
 from FAST.analyzer.utils import (
     get_line_no_history_testfiles,
@@ -34,30 +34,23 @@ budget_data = json.load(open(f"{BUDGET_FILEPATH}"))
 def analyzer_main(prog, setting):
     analyzer_data = {}
     # Get parent commits of test deletion commit(TDC) in which whole test class is deleted
-    commits_list = get_whole_file_test_deletion_parent_commits(prog)
-    print("Total whole file test deletion parent commits:", len(commits_list))
+    commits_list = get_whole_file_redundant_test_deletion_parent_commits(prog)
     analyzer_data["Total test deletion parent commits:"] = len(commits_list)
 
-    # Get test cases deleted test class
-    deleted_testcases_with_whole_file = get_deleted_testcases_with_whole_file_df(prog)
-    print(
-        "Total test cases deleted with whole file:",
-        len(deleted_testcases_with_whole_file),
+    # Get test cases deleted with test class
+    deleted_testcases_with_whole_file = (
+        get_redundant_deleted_testcases_with_whole_file_df(prog)
     )
     analyzer_data["Total test cases deleted with whole file:"] = len(
         deleted_testcases_with_whole_file
     )
 
     analyzer_data["details"] = []
-    for index, commit in enumerate(commits_list):
-        commit = strip_commit_url(commit)
 
-        # NOTE: IGNORE 100% TEST DELETION CASE OF COMMONS-MATH FROM STUDY
-        if (
-            prog == "commons-math"
-            and commit == "991078eceb9479657094c8a4ee062d816f132446"
-        ):
-            continue
+    print("Looping each commit START")
+    for index, commit in enumerate(commits_list):
+        print("Commit :", (index + 1))
+        commit = strip_commit_url(commit)
 
         # handle both strict and loose setting
         setting_dir = "loose" if setting == "loose" else "strict"
@@ -70,8 +63,8 @@ def analyzer_main(prog, setting):
         numOfTCS = get_no_of_testfiles_in_commit(prog, commit)
         print("Total test files: ", numOfTCS)
 
-        deleted_testfiles = get_deleted_testfiles_in_test_deletion_commit_parent(
-            prog, commit
+        deleted_testfiles = (
+            get_deleted_redundant_testfiles_in_test_deletion_commit_parent(prog, commit)
         )
         no_of_deleted_testfiles = len(deleted_testfiles)
         print("Total no. of deleted test files: ", no_of_deleted_testfiles)
@@ -104,7 +97,6 @@ def analyzer_main(prog, setting):
             max_false_detects_line_no = []
             max_false_detects_test_files = []
             max_detects_redundant_deleted_tests = 0
-            max_detects_obsolete_deleted_tests = 0
 
             # Metrics
             total_execution = []
@@ -171,15 +163,9 @@ def analyzer_main(prog, setting):
                         )
                         detected_deleted_testfiles.append(filename)
 
-                        # Calculate number of deleted obsolete and redundant tests detected
-                        (
-                            detected_deleted_obsolete_tests_df,
-                            detected_deleted_redundant_tests_df,
-                        ) = get_deleted_obsolete_and_redundant_testcases_by_project_and_removedfilepath(
+                        # Calculate number of redundant tests detected
+                        detected_deleted_redundant_tests_df = get_redundant_deleted_testcases_by_project_and_removed_filepath(
                             prog, commit, filename
-                        )
-                        no_of_detected_deleted_obsolete_tests += len(
-                            detected_deleted_obsolete_tests_df
                         )
                         no_of_detected_deleted_redundant_tests += len(
                             detected_deleted_redundant_tests_df
@@ -198,9 +184,6 @@ def analyzer_main(prog, setting):
                     max_detects_test_files = detected_deleted_testfiles
                     max_failed_detects_test_files = failed_detected_deleted_testfiles
                     max_repetition = i
-                    max_detects_obsolete_deleted_tests = (
-                        no_of_detected_deleted_obsolete_tests
-                    )
                     max_detects_redundant_deleted_tests = (
                         no_of_detected_deleted_redundant_tests
                     )
@@ -230,8 +213,7 @@ def analyzer_main(prog, setting):
                 "Failed Detected Testfiles": max_failed_detects_test_files,
                 "False Detected Testfiles Line No": max_false_detects_line_no,
                 "False Detected Testfiles": max_false_detects_test_files,
-                "Total Detected Deleted And Obsolete Tests": max_detects_obsolete_deleted_tests,
-                "Total Detected Deleted And Redundant Tests": max_detects_redundant_deleted_tests,
+                "Total Detected Deleted Redundant Tests": max_detects_redundant_deleted_tests,
                 "Max_repetition": max_repetition,
                 "Total execution time": fsum(total_execution),
                 "Total preparation time": fsum(total_preparation),
@@ -254,5 +236,11 @@ def analyzer_main(prog, setting):
 
         # handle both strict and loose setting
         setting_dir = "loose" if setting == "loose" else "strict"
-        f = open(f"./{ARTIFACTS_DIR}/{setting_dir}/{prog}.json", "w")
+
+        dir_path = f"./{ARTIFACTS_DIR}/{setting_dir}"
+        if not os.path.exists(dir_path):
+            os.mkdir(dir_path)
+        f = open(f"{dir_path}/{prog}.json", "w")
         f.write(json.dumps(analyzer_data, indent=2))
+
+    print("Looping each commit END")

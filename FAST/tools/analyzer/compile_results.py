@@ -23,7 +23,7 @@ from FAST.config import (
     COMPILED_RESULTS_FILEPATH,
     REPEATS,
 )
-from FAST.utils.helpers import get_whole_file_test_deletion_parent_commits
+from FAST.utils.helpers import get_whole_file_redundant_test_deletion_parent_commits
 
 data = {"strict": {}, "loose": {}}
 
@@ -34,7 +34,9 @@ for index, project in enumerate(PROJECTS):
     algo_analyzed_loose = json.load(loose_file)
 
     # Total parent commits taken into consideration for reduction using FAST-R
-    total_parent_commits = len(get_whole_file_test_deletion_parent_commits(project))
+    total_parent_commits = len(
+        get_whole_file_redundant_test_deletion_parent_commits(project)
+    )
 
     for index, algo in enumerate(ALGOS):
 
@@ -45,8 +47,7 @@ for index, project in enumerate(PROJECTS):
 
             total_detected = 0
             total_failed_to_detect = 0
-            total_detected_deleted_and_redundant_tests = 0
-            total_detected_deleted_and_obsolete_tests = 0
+            total_detected_deleted_redundant_tests = 0
 
             # Takes into account all the 50 iterations for reducing test suite
             total_preparation_time = 0
@@ -94,15 +95,10 @@ for index, project in enumerate(PROJECTS):
                     "Total Failed To Detect Deleted Testfiles"
                 ]
 
-                # # Total detected deleted obsolete and redundant tests
-                total_detected_deleted_and_obsolete_tests += (
+                # Total detected deleted redundant tests
+                total_detected_deleted_redundant_tests += (
                     alog_analyzed_commit_each_algo[
-                        "Total Detected Deleted And Obsolete Tests"
-                    ]
-                )
-                total_detected_deleted_and_redundant_tests += (
-                    alog_analyzed_commit_each_algo[
-                        "Total Detected Deleted And Redundant Tests"
+                        "Total Detected Deleted Redundant Tests"
                     ]
                 )
 
@@ -141,8 +137,7 @@ for index, project in enumerate(PROJECTS):
                 {
                     "Total Detected Deleted Testfiles": total_detected,
                     "Total Failed To Detect Deleted Testfiles": total_failed_to_detect,
-                    "Total Detected Deleted And Obsolete Tests": total_detected_deleted_and_obsolete_tests,
-                    "Total Detected Deleted And Redundant Tests": total_detected_deleted_and_redundant_tests,
+                    "Total Detected Deleted Redundant Tests": total_detected_deleted_redundant_tests,
                     "Total Preparation Time": str(
                         timedelta(seconds=total_preparation_time)
                     ),

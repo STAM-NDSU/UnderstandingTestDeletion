@@ -19,8 +19,8 @@ from FAST.utils.utils import strip_commit_url
 import json
 from FAST.config import REPEATS, RESULTS_DIR, TESTCASES_DIR, BUDGET_FILEPATH
 from FAST.utils.helpers import (
-    get_whole_file_test_deletion_parent_commits,
-    get_no_of_deleted_testfiles_in_test_deletion_commit_parent,
+    get_whole_file_redundant_test_deletion_parent_commits,
+    get_no_of_deleted_redundant_testfiles_in_test_deletion_commit_parent,
 )
 
 # Budget File contains pre-computed budget for loose setting
@@ -37,7 +37,7 @@ def run_algorithm(enforce_algorithm, enforced_algo, algo):
 
 
 def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
-    commits_list = get_whole_file_test_deletion_parent_commits(prog)
+    commits_list = get_whole_file_redundant_test_deletion_parent_commits(prog)
 
     # Strict Scenario
     if setting == "strict":
@@ -68,7 +68,9 @@ def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
                 (1 for _ in open(inputFile))
             )  # Total no. of testclass in particular commit history
             no_of_deleted_testfiles = (
-                get_no_of_deleted_testfiles_in_test_deletion_commit_parent(prog, commit)
+                get_no_of_deleted_redundant_testfiles_in_test_deletion_commit_parent(
+                    prog, commit
+                )
             )
             no_of_preserved_testfiles = numOfTCS - no_of_deleted_testfiles
             print("Total test files: ", numOfTCS)
@@ -78,7 +80,7 @@ def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
             # Final budget[no. of testcases remaining] in percentage
             # Repetition => [step size i.e increases from 1%-30% in FAST-R]
             repetitions = int(no_of_preserved_testfiles / numOfTCS * 100)
-            print("Computed Repetitions: ", repetitions)
+            print("Budget (i.e Percentage of test preserved): ", no_of_preserved_testfiles / numOfTCS * 100)
 
             # for reduction in range(1, repetitions+1):
             # Current budget for each step[step size increases from 1%-30%]
@@ -190,7 +192,9 @@ def main(prog, setting, enforce_algorithm=False, enforced_algorithm="FAST-all"):
                 (1 for _ in open(inputFile))
             )  # Total no. of testclass in particular commit history
             no_of_deleted_testfiles = (
-                get_no_of_deleted_testfiles_in_test_deletion_commit_parent(prog, commit)
+                get_no_of_deleted_redundant_testfiles_in_test_deletion_commit_parent(
+                    prog, commit
+                )
             )
             no_of_preserved_testfiles = numOfTCS - no_of_deleted_testfiles
             print("Total test files: ", numOfTCS)
