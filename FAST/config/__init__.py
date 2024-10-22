@@ -11,10 +11,11 @@ ALGOS = ["FAST++", "FAST-all", "FAST-CS", "FAST-pw"]
 # In our study, we compute budget in two different setting
 SETTINGS = ["loose", "strict"]
 
-# Only 3 of the analyzed projects have developer deleted redundant tests removed along with whole file.
+# Only 3 of the analyzed projects have developer deleted redundant tests (including ones that reduce test coverage) removed along with whole file.
 # FAST-R approaches are used to identify redundant test classes
 # TODO: ADD ARTIFACT LINK
 PROJECTS = [
+    # "commons-lang",
     "commons-math",
     "joda-time",
     "pmd",

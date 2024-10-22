@@ -231,6 +231,12 @@ This file is named `joda-time.json` and contains information regarding how many 
 
 **NOTE: The files generated from our study after executing this step for loose and strict setting are located inside the directory [FAST/artifacts/loose](/FAST/artifacts/loose) and [FAST/artifacts/loose](/FAST/artifacts/loose) respectively.**
 
+You can generate equivalent csv files for the generated `.json` file by running following command: 
+
+```
+    python3 tools/analyzer/results_json_to_csv.py
+```
+
 7. **Generate Summary:** To generate a summary of the effectiveness of all 4 FAST-R algorithms in identifying deleted test classes and redundant tests, please run the following command:
 
 ```
@@ -240,6 +246,8 @@ This file is named `joda-time.json` and contains information regarding how many 
 This command compiles the results generated for all of the FAST-R algorithms in both strict and loose setting and creates a single `compiled_results.json` file within the [FAST/artifacts](/FAST/artifacts/) directory
 
 **NOTE: The file generated from our study after executing this step is located [here](/FAST/artifacts/compiled_results.json).**
+
+
 
 ## Have Trouble Reproducing Results?
 

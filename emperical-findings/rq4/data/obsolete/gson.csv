@@ -1,0 +1,1527 @@
+Datetime,Hash,Parent,Author,Commit Msg,Filepath,Filename,Removed Test Case,Type
+11/13/2008 20:17:19,bc2c25f235808c7e90d9bde6b2795997405af0cf,9245bebdba9a3227674f3c0b08d86165891f02cc,inder123@gmail.com,"Removed ExceptionWrapper from serializers. 
+This is done since it is improper to throw a parse exception from serializers. Moreover, the serializers dont deal with external input, they deal with classes, so they need not guard against spurious input.",gson/src/test/java/com/google/gson/JsonSerializerExceptionWrapperTest.java,JsonSerializerExceptionWrapperTest.java,testRethrowJsonParseException,concurrent obsolete
+11/13/2008 20:17:19,bc2c25f235808c7e90d9bde6b2795997405af0cf,9245bebdba9a3227674f3c0b08d86165891f02cc,inder123@gmail.com,"Removed ExceptionWrapper from serializers. 
+This is done since it is improper to throw a parse exception from serializers. Moreover, the serializers dont deal with external input, they deal with classes, so they need not guard against spurious input.",gson/src/test/java/com/google/gson/JsonSerializerExceptionWrapperTest.java,JsonSerializerExceptionWrapperTest.java,testWrappedExceptionPropagation,concurrent obsolete
+11/13/2008 20:17:19,bc2c25f235808c7e90d9bde6b2795997405af0cf,9245bebdba9a3227674f3c0b08d86165891f02cc,inder123@gmail.com,"Removed ExceptionWrapper from serializers. 
+This is done since it is improper to throw a parse exception from serializers. Moreover, the serializers dont deal with external input, they deal with classes, so they need not guard against spurious input.",gson/src/test/java/com/google/gson/JsonSerializerExceptionWrapperTest.java,JsonSerializerExceptionWrapperTest.java,testProperSerialization,concurrent obsolete
+11/14/2008 23:11:28,cf2a457af7b0422e7728e0d55a4e794048af5a6b,0d8150fe52eba34a0472c47be71587885ba4a94c,joel.leitch@gmail.com,Removed the TypeAdapter object from GSON now that the primitive objects and fields are created by a custom Type Adapter.,gson/src/test/java/com/google/gson/PrimitiveTypeAdapterTest.java,PrimitiveTypeAdapterTest.java,testImproperConversion,concurrent obsolete
+11/14/2008 23:11:28,cf2a457af7b0422e7728e0d55a4e794048af5a6b,0d8150fe52eba34a0472c47be71587885ba4a94c,joel.leitch@gmail.com,Removed the TypeAdapter object from GSON now that the primitive objects and fields are created by a custom Type Adapter.,gson/src/test/java/com/google/gson/PrimitiveTypeAdapterTest.java,PrimitiveTypeAdapterTest.java,testImproperCharacterConversion,concurrent obsolete
+11/14/2008 23:11:28,cf2a457af7b0422e7728e0d55a4e794048af5a6b,0d8150fe52eba34a0472c47be71587885ba4a94c,joel.leitch@gmail.com,Removed the TypeAdapter object from GSON now that the primitive objects and fields are created by a custom Type Adapter.,gson/src/test/java/com/google/gson/PrimitiveTypeAdapterTest.java,PrimitiveTypeAdapterTest.java,testProperPrimitiveConversions,concurrent obsolete
+11/14/2008 23:11:28,cf2a457af7b0422e7728e0d55a4e794048af5a6b,0d8150fe52eba34a0472c47be71587885ba4a94c,joel.leitch@gmail.com,Removed the TypeAdapter object from GSON now that the primitive objects and fields are created by a custom Type Adapter.,gson/src/test/java/com/google/gson/PrimitiveTypeAdapterTest.java,PrimitiveTypeAdapterTest.java,testProperEnumConversions,concurrent obsolete
+12/19/2008 11:46:24,53f7d26b6d442467d54f0e61fdf030cd395011f7,f7e4d5e4bbdb10ef3215c66c0df4ca3828f99768,inder123@gmail.com,"removed tests for serialization of BigDecimal NaN, positive and negative infinity since BigDecimal can not be created with these values.",gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testBigDecimalNaNSerializationNotSupported,phased obsolete
+12/19/2008 11:46:24,53f7d26b6d442467d54f0e61fdf030cd395011f7,f7e4d5e4bbdb10ef3215c66c0df4ca3828f99768,inder123@gmail.com,"removed tests for serialization of BigDecimal NaN, positive and negative infinity since BigDecimal can not be created with these values.",gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testBigDecimalInfinitySerializationNotSupported,phased obsolete
+12/19/2008 11:46:24,53f7d26b6d442467d54f0e61fdf030cd395011f7,f7e4d5e4bbdb10ef3215c66c0df4ca3828f99768,inder123@gmail.com,"removed tests for serialization of BigDecimal NaN, positive and negative infinity since BigDecimal can not be created with these values.",gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testNegativeInfinityBigDecimalSerializationNotSupported,phased obsolete
+03/30/2009 13:36:55,e340801d258e18f733620b0fd03d65fffb8df6c3,4f727df749b9ad97dfd0dd108a67539b7f163ee2,inder123@gmail.com,Moved enum-related tests under EnumTest class.,gson/src/test/java/com/google/gson/functional/EnumTest.java,EnumTest.java,testEnumFieldSerialization,phased obsolete
+03/30/2009 13:36:55,e340801d258e18f733620b0fd03d65fffb8df6c3,4f727df749b9ad97dfd0dd108a67539b7f163ee2,inder123@gmail.com,Moved enum-related tests under EnumTest class.,gson/src/test/java/com/google/gson/functional/EnumTest.java,EnumTest.java,testEnumFieldDeserialization,phased obsolete
+03/30/2009 13:36:55,e340801d258e18f733620b0fd03d65fffb8df6c3,4f727df749b9ad97dfd0dd108a67539b7f163ee2,inder123@gmail.com,Moved enum-related tests under EnumTest class.,gson/src/test/java/com/google/gson/functional/ObjectTest.java,ObjectTest.java,testTopLevelEnumSerialization,phased obsolete
+03/30/2009 13:36:55,e340801d258e18f733620b0fd03d65fffb8df6c3,4f727df749b9ad97dfd0dd108a67539b7f163ee2,inder123@gmail.com,Moved enum-related tests under EnumTest class.,gson/src/test/java/com/google/gson/functional/ObjectTest.java,ObjectTest.java,testTopLevelEnumDeserialization,phased obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testNonStringPrimitiveVisitation,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testStringPrimitiveVisitationNoEscapingRequired,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testStringPrimitiveVisitationEscapingRequired,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testNonStringArrayVisitation,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testStringArrayVisitationNoEscaping,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testStringArrayVisitationEscapingRequired,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testNonStringFieldVisitation,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testStringFieldVisitationNoEscaping,concurrent obsolete
+09/23/2009 13:28:03,50eb582657b5a07aa4aec22f11c9f3071eb631a8,3b0f8f4340c68d8fde0840befbc1b89afa14933f,joel.leitch@gmail.com,Ensure that the JsonElement.toString() will always generate valid JSON (even when  control characters/whitespace characters are used).,gson/src/test/java/com/google/gson/JsonEscapingVisitorTest.java,JsonEscapingVisitorTest.java,testStringFieldVisitationEscapingRequired,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testCtrlN,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testCtrlR,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testCtrlT,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testBackSpace,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testFormFeed,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testSingleQuote,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testSingleQuoteEscaped,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testDoubleQuote,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testDoubleQuoteEscaped,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testBackslash,concurrent obsolete
+11/01/2010 17:57:39,43f2a0012b5fb9c94a5e1bb926034e136a3a8dfb,abe244c099b8c0f0e4c33921a55b27755564713a,inder123@gmail.com,Removed JavaCC parser definition and its generated classes.,gson/src/test/java/com/google/gson/StringUnmarshallerTest.java,StringUnmarshallerTest.java,testUnicodeString,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/rest/definition/IdTest.java,IdTest.java,testRawTypeNotEqualToParameterizedOfConcreteType,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/rest/definition/IdTest.java,IdTest.java,testRawTypeEqualToParameterizedOfWildcardType,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/rest/definition/IdTest.java,IdTest.java,testStaticEquals,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/rest/definition/IdTypeAdapterTest.java,IdTypeAdapterTest.java,testSerializeId,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/rest/definition/IdTypeAdapterTest.java,IdTypeAdapterTest.java,testDeserializeId,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testVersionIsSkipped,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testVersionNotPresent,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testResourceIdPresent,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testResourceIdWithEndSlashPresent,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testVersionAndResourceIdPresent,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testNullPath,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testEmptyPath,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/CallPathTest.java,CallPathTest.java,testWhiteSpacePath,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/TypedKeyTest.java,TypedKeyTest.java,testEqualsForSameName,concurrent obsolete
+11/12/2010 11:12:46,822d1bc75e70538f01638955bf766316e416499c,7d055fcb517a25e3cf141a867ec2b53264c40a19,inder123@gmail.com,moved contents of wsdef to greaze-definition.,wsdef/src/test/java/com/google/gson/webservice/definition/TypedKeyTest.java,TypedKeyTest.java,testEqualsFailsForDifferentClasses,concurrent obsolete
+11/16/2010 16:18:28,56344cf06786bf8cd031933a5fc39eeacde7d942,0a3f5fa801954b07d0041d8a7dc6f87dc210a470,joel.leitch@gmail.com,Remove duplicate test.,gson/src/test/java/com/google/gson/JsonParserTest.java,JsonParserTest.java,testParseSingleWordFails,phased obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testArray,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testArrayOfArrays,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testParameterizedArray,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testParameterizedArrayOfArrays,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testNestedParameterizedArray,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testPrimitiveArray,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testStringArray,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testPrimitiveArrayType,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testStringArrayType,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoArrayTest.java,TypeInfoArrayTest.java,testArrayAsParameterizedTypes,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testSimpleField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testEnumField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testParameterizedTypeField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testNestedParameterizedTypeField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testGenericArrayTypeField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testTypeVariableField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testTypeVariableArrayField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testMutliDimensionalTypeVariableArrayField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testParameterizedTypeVariableField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testNestedParameterizedTypeVariableField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testParameterizedTypeVariableArrayField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testWildcardField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testArrayOfWildcardField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testListStringWildcardField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testArrayOfListStringWildcardField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testListTypeVariableWildcardField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoFactoryTest.java,TypeInfoFactoryTest.java,testArrayOfListTypeVariableWildcardField,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoMapTest.java,TypeInfoMapTest.java,testInvalidConstruction,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoMapTest.java,TypeInfoMapTest.java,testNonMapConstruction,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoMapTest.java,TypeInfoMapTest.java,testBasicGetters,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoMapTest.java,TypeInfoMapTest.java,testMapImplementations,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testPrimitive,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testPrimitiveWrapper,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testString,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testObject,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testPrimitiveType,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testObjectType,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testParameterizedTypes,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testGenericizedGenericType,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeInfoTest.java,TypeInfoTest.java,testStrangeTypeParameters,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeUtilsTest.java,TypeUtilsTest.java,testGetActualTypeForFirstTypeVariable,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeUtilsTest.java,TypeUtilsTest.java,testIsArrayForNonArrayClasses,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeUtilsTest.java,TypeUtilsTest.java,testIsArrayForArrayClasses,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeUtilsTest.java,TypeUtilsTest.java,testToRawClassForNonGenericClasses,concurrent obsolete
+12/03/2010 2:07:13,d1ddab2e6ffcd938ac0d133fd46caf5fb2417009,faa5464e848ab9c6afc46e38eb416e7a156a23e1,jesse@swank.ca,"Swap out GSON's type mechanics with the Type resolution code from Guice.
+
+The most significant impact of this change is that fields whose types are type parameters should now GSONify just fine. For example, consider the class below.
+
+abstract class Foo<A, B> {
+   A a;
+   B b;
+   List<A> list;
+   Map<A, List<B>> map;
+}
+class RealFoo extends Foo<String, Integer> {...}
+
+This is a reasonable checkpoint but some work still needs to be done for this. In particular, the level of visibility of methods in TypeToken and Type should be reconsidered; we're exposing more than we need to!",gson/src/test/java/com/google/gson/TypeUtilsTest.java,TypeUtilsTest.java,testToRawClassForGenericClasses,concurrent obsolete
+01/10/2011 16:47:36,0e5f6704cd5f438c55efe1fcf70c857f95f8190b,25f0014305b8418da278629ee9726f9b3aa79b48,inder123@gmail.com,Added sonatype oss as parent for the pom. Diabled repository management with-in POM per instructions at: https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide,gson/src/test/java/com/google/gson/reflect/TypeTokenTest.java,TypeTokenTest.java,testIsAssignableFromRawTypes,phased obsolete
+01/10/2011 16:47:36,0e5f6704cd5f438c55efe1fcf70c857f95f8190b,25f0014305b8418da278629ee9726f9b3aa79b48,inder123@gmail.com,Added sonatype oss as parent for the pom. Diabled repository management with-in POM per instructions at: https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide,gson/src/test/java/com/google/gson/reflect/TypeTokenTest.java,TypeTokenTest.java,testIsAssignableFromWithTypeParameters,phased obsolete
+01/10/2011 16:47:36,0e5f6704cd5f438c55efe1fcf70c857f95f8190b,25f0014305b8418da278629ee9726f9b3aa79b48,inder123@gmail.com,Added sonatype oss as parent for the pom. Diabled repository management with-in POM per instructions at: https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide,gson/src/test/java/com/google/gson/reflect/TypeTokenTest.java,TypeTokenTest.java,testIsAssignableFromWithBasicWildcards,phased obsolete
+01/10/2011 16:47:36,0e5f6704cd5f438c55efe1fcf70c857f95f8190b,25f0014305b8418da278629ee9726f9b3aa79b48,inder123@gmail.com,Added sonatype oss as parent for the pom. Diabled repository management with-in POM per instructions at: https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide,gson/src/test/java/com/google/gson/reflect/TypeTokenTest.java,TypeTokenTest.java,testIsAssignableFromWithNestedWildcards,phased obsolete
+02/03/2011 21:09:41,114633fbf933c3085a189d20c62fadae0398fb39,ea48a1debfaa863d29dac8ddee9a4dd5a55ed785,joel.leitch@gmail.com,Provide a means to add serialization or deserialization specific exclusion strategies.,gson/src/test/java/com/google/gson/ExclusionStrategy2AdapterTest.java,ExclusionStrategy2AdapterTest.java,testConstruction,concurrent obsolete
+02/03/2011 21:09:41,114633fbf933c3085a189d20c62fadae0398fb39,ea48a1debfaa863d29dac8ddee9a4dd5a55ed785,joel.leitch@gmail.com,Provide a means to add serialization or deserialization specific exclusion strategies.,gson/src/test/java/com/google/gson/ExclusionStrategy2AdapterTest.java,ExclusionStrategy2AdapterTest.java,testAdapterDoesSameForBothModes,concurrent obsolete
+02/03/2011 21:09:41,114633fbf933c3085a189d20c62fadae0398fb39,ea48a1debfaa863d29dac8ddee9a4dd5a55ed785,joel.leitch@gmail.com,Provide a means to add serialization or deserialization specific exclusion strategies.,gson/src/test/java/com/google/gson/FunctionWithInternalDependenciesTest.java,FunctionWithInternalDependenciesTest.java,testUserDefinedExclusionPolicies,phased obsolete
+02/03/2011 21:09:41,114633fbf933c3085a189d20c62fadae0398fb39,ea48a1debfaa863d29dac8ddee9a4dd5a55ed785,joel.leitch@gmail.com,Provide a means to add serialization or deserialization specific exclusion strategies.,gson/src/test/java/com/google/gson/functional/ExclusionStrategyFunctionalTest.java,ExclusionStrategyFunctionalTest.java,testExclusionStrategy2Serialization,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testValidFieldBeginsWithDollarSign,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testValidFieldBeginsWithUnderscore,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testValidFieldBeginsWithLetter,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testValidFieldMixingLetter,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testInvalidFieldStartingWithNumbers,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testInvalidFieldStartingTwoDollarSigns,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testInvalidFieldStartingTwoUnderscores,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testInvalidFieldStartingDollarUnderscore,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testJavaAndJsKeywordAsFieldName,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testInvalidCharacters,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testDashesInFieldName,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testSpacesInFieldName,concurrent obsolete
+04/12/2011 12:29:19,4917fc7f7628518ade0dfa11464192a17af1c7d1,7f9762db633dde22b801e365d4ae02d50acaa6bf,joel.leitch@gmail.com,"Lift restriction on naming when using the ""@SerializedNamed"" annotation.
+
+Fix for Issue 290.",gson/src/test/java/com/google/gson/JsonFieldNameValidatorTest.java,JsonFieldNameValidatorTest.java,testSpacesInBeginningOfName,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testNoSpecialCharacters,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testNewlineEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testCarrageReturnEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testTabEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testDoubleQuoteEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testSingleQuoteEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testLineSeparatorEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testParagraphSeparatorEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testControlCharBlockEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testEqualsEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testGreaterThanAndLessThanEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testAmpersandEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testSlashEscaping,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testSingleQuoteNotEscaped,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testRequiredEscapingUnicodeCharacter,concurrent obsolete
+07/12/2011 18:50:00,9cf579ef01e66dad2ffe907350d2d088497138a8,041d499a7c4af1b70617001ded11dbc01732d97f,jesse@swank.ca,"Use Streams instead of Escaper.
+
+Fixes issue 345.",gson/src/test/java/com/google/gson/EscaperTest.java,EscaperTest.java,testUnicodeCharacterStringNoEscaping,concurrent obsolete
+09/08/2011 23:20:25,f67940cb638fcf4d3443b057176bb1b84d054ac0,ea9c0236c79134cd2ecdd1b6d244a584e7fc6c22,jesse@swank.ca,"Retire two old bad features
+ - overriding primitive type adapters
+ - auto unwrapping of single element arrays",gson/src/test/java/com/google/gson/functional/ArrayTest.java,ArrayTest.java,testArrayOfPrimitivesWithCustomTypeAdapter,phased obsolete
+09/08/2011 23:20:25,f67940cb638fcf4d3443b057176bb1b84d054ac0,ea9c0236c79134cd2ecdd1b6d244a584e7fc6c22,jesse@swank.ca,"Retire two old bad features
+ - overriding primitive type adapters
+ - auto unwrapping of single element arrays",gson/src/test/java/com/google/gson/functional/ArrayTest.java,ArrayTest.java,testArrayOfObjectsWithoutTypeInfoDeserialization,phased obsolete
+09/08/2011 23:20:25,f67940cb638fcf4d3443b057176bb1b84d054ac0,ea9c0236c79134cd2ecdd1b6d244a584e7fc6c22,jesse@swank.ca,"Retire two old bad features
+ - overriding primitive type adapters
+ - auto unwrapping of single element arrays",gson/src/test/java/com/google/gson/functional/ArrayTest.java,ArrayTest.java,testArrayWithoutTypeInfoDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testPrimitiveIntegerAutoboxedInASingleElementArrayDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testPrimitiveLongAutoboxedInASingleElementArrayDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testPrimitiveBooleanAutoboxedInASingleElementArrayDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testPrimitiveDoubleAutoboxedInASingleElementArrayDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testBigDecimalInASingleElementArrayDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testBigIntegerInASingleElementArrayDeserialization,phased obsolete
+09/09/2011 0:04:24,e19672d0a394d552469147e12a70bf81413f0076,ba283925ae8503ca72f326486a3518fb517df5b7,jesse@swank.ca,Throw the right exceptions when primitives fail to parse.,gson/src/test/java/com/google/gson/functional/PrimitiveTest.java,PrimitiveTest.java,testOverridingDefaultPrimitiveSerialization,phased obsolete
+09/09/2011 0:41:35,9424949245bb46bd63f3fed83e67daa9fdbdbff9,99801915aa324c4d07b852e23debfbcefb1a3007,jesse@swank.ca,Don't unwrap single-element String arrays,gson/src/test/java/com/google/gson/functional/StringTest.java,StringTest.java,testStringValueAsSingleElementArrayDeserialization,phased obsolete
+09/09/2011 1:26:21,e7566085683827ae9278880c38e21a80ccd573d9,fede584b9811f35432a936af0c9441f4e05df80a,jesse@swank.ca,Forbid custom serializers for primitive types (so we can avoid boxing in the reflective and array adapters),gson/src/test/java/com/google/gson/functional/CustomDeserializerTest.java,CustomDeserializerTest.java,testCustomDeserializerReturnsNullForTopLevelPrimitives,phased obsolete
+09/09/2011 1:26:21,e7566085683827ae9278880c38e21a80ccd573d9,fede584b9811f35432a936af0c9441f4e05df80a,jesse@swank.ca,Forbid custom serializers for primitive types (so we can avoid boxing in the reflective and array adapters),gson/src/test/java/com/google/gson/functional/CustomDeserializerTest.java,CustomDeserializerTest.java,testCustomDeserializerReturnsNullForPrimitiveFields,phased obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/DefaultConstructorAllocatorTest.java,DefaultConstructorAllocatorTest.java,testObjectConstructor,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/DefaultConstructorAllocatorTest.java,DefaultConstructorAllocatorTest.java,testMissingDefaultConstructor,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MappedObjectConstructorTest.java,MappedObjectConstructorTest.java,testInstanceCreatorTakesTopPrecedence,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MappedObjectConstructorTest.java,MappedObjectConstructorTest.java,testNoInstanceCreatorInvokesDefaultConstructor,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MappedObjectConstructorTest.java,MappedObjectConstructorTest.java,testNoDefaultConstructor,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MemoryRefStackTest.java,MemoryRefStackTest.java,testPeekEmptyStack,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MemoryRefStackTest.java,MemoryRefStackTest.java,testPushPeekAndPop,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MemoryRefStackTest.java,MemoryRefStackTest.java,testPopTooMany,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/MemoryRefStackTest.java,MemoryRefStackTest.java,testContains,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/NullExclusionStrategyTest.java,NullExclusionStrategyTest.java,testNeverSkipsClass,concurrent obsolete
+09/11/2011 2:04:56,25c6ae177b1ca56db7f3c29eb574bdd032a06165,cdd5d80b85155c21c61f888fb3e70c65e72edef7,jesse@swank.ca,"Down to 22 failing tests.
+
+Consolidated all of the different code paths that we use to construct instances. We now have an ObjectConstructor class that knows what type it constructs; this means that we don't need to ever do reflection to lookup a constructor at construction time.
+
+Cleaned up some buggy type adapters, particularly around handling of null.
+
+Removed dead code for object graph navigation.
+
+Moved some classes into 'internal' so they are visible to the 'bind' subpackage.
+
+Turned some TypeAdapterFactory/TypeAdapter pairs inside out so that the TypeAdapter is now the inner class. This is necessary so that the factories can take parameters.
+
+Added an API to request the 'next' type adapter for a type. This allows type adapters to compose other type adapters. We're using this in two places:
+ - where the user has excluded a type from serialization but not deserialization, we need to use the ""default"" deserialization but interpose null on serialization. We create a type adapter that delegates for one and returns null for the other.
+ - similarly when a DOM type serializer is registered but no deserializer, or vice versa.
+This is the biggest change to the MiniGson core.
+
+For backwards compatibility, return null for the empty string.
+
+Simplify JsonSerializationContext/JsonDeserializationContext to simply call through to GSON. SerializeDefault is currently unsupported.
+
+More useful error messages when calling getAsBoolean on a JsonNull.
+
+Remove currently unused MemoryRefStack. We might need this back again, though wiring it back in will be much more difficult because we don't interject ourselves between the users' various type adapters.",gson/src/test/java/com/google/gson/NullExclusionStrategyTest.java,NullExclusionStrategyTest.java,testNeverSkipsField,concurrent obsolete
+09/16/2011 0:40:05,c71e61cf4830ee950b8fbc601ccadfe4d7ab6d1a,915c5d4d6f46ca65f60430b7a9b403be87453243,inder123@gmail.com,"Converted EnumTypeAdapter to new style.
+Got rid of default Hierarchy Serializer/Deserializers from DefaultTypeAdapters.
+Got rid of methods for gettting default serializers/deserializers/instance creators. Instead we reuse the static final instances.
+Fixed warnings in TypeAdapters where a parameterized type T was hiding the parameterized T in methods.
+Removed support to unwrap single element array of enums into enum values. Also removed the test that verifies this behavior.",gson/src/test/java/com/google/gson/functional/EnumTest.java,EnumTest.java,testTopLevelEnumInASingleElementArrayDeserialization,phased obsolete
+09/28/2011 13:00:34,2236c95c37e4ac882c20ac080e4ebc68b85b296c,3f261441651fe6a5f57cf4e6aa655f9661dc606a,jesse@swank.ca,Death to serializeDefault and deserializeDefault,gson/src/test/java/com/google/gson/functional/SystemOnlyTypeAdaptersTest.java,SystemOnlyTypeAdaptersTest.java,testSerializeDefault,phased obsolete
+09/28/2011 13:00:34,2236c95c37e4ac882c20ac080e4ebc68b85b296c,3f261441651fe6a5f57cf4e6aa655f9661dc606a,jesse@swank.ca,Death to serializeDefault and deserializeDefault,gson/src/test/java/com/google/gson/functional/SystemOnlyTypeAdaptersTest.java,SystemOnlyTypeAdaptersTest.java,testDeserializeDefault,phased obsolete
+11/12/2011 17:32:44,172143df7c37482f8c1d43ac4bff769d40ee5ac9,0ac36805c22209cf736a895466f36d56536b3a8d,jesse@swank.ca,Removing JsonObject.deepCopy() and JsonArray.deepCopy(),gson/src/test/java/com/google/gson/JsonArrayTest.java,JsonArrayTest.java,testDeepCopy,concurrent obsolete
+11/12/2011 17:32:44,172143df7c37482f8c1d43ac4bff769d40ee5ac9,0ac36805c22209cf736a895466f36d56536b3a8d,jesse@swank.ca,Removing JsonObject.deepCopy() and JsonArray.deepCopy(),gson/src/test/java/com/google/gson/JsonObjectTest.java,JsonObjectTest.java,testDeepCopy,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/CamelCaseSeparatorNamingPolicyTest.java,CamelCaseSeparatorNamingPolicyTest.java,testInvalidInstantiation,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/CamelCaseSeparatorNamingPolicyTest.java,CamelCaseSeparatorNamingPolicyTest.java,testUnderscoreSeparator,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/CamelCaseSeparatorNamingPolicyTest.java,CamelCaseSeparatorNamingPolicyTest.java,testMultiCharSeparator,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/CamelCaseSeparatorNamingPolicyTest.java,CamelCaseSeparatorNamingPolicyTest.java,testNameBeginsWithCapital,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/CamelCaseSeparatorNamingPolicyTest.java,CamelCaseSeparatorNamingPolicyTest.java,testExceptionPossiblyIncorrectSeparation,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/FieldNamingStrategy2AdapterTest.java,FieldNamingStrategy2AdapterTest.java,testSimpleAdapter,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/JavaFieldNamingPolicyTest.java,JavaFieldNamingPolicyTest.java,testFieldNamingPolicy,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/JavaFieldNamingPolicyTest.java,JavaFieldNamingPolicyTest.java,testNullField,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCamelCaseSeparatorNamingPolicyTest.java,LowerCamelCaseSeparatorNamingPolicyTest.java,testNameBeginsWithLowerCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCamelCaseSeparatorNamingPolicyTest.java,LowerCamelCaseSeparatorNamingPolicyTest.java,testNameBeginsWithUpperCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCamelCaseSeparatorNamingPolicyTest.java,LowerCamelCaseSeparatorNamingPolicyTest.java,testExceptionPossiblyIncorrectSeparation,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCamelCaseSeparatorNamingPolicyTest.java,LowerCamelCaseSeparatorNamingPolicyTest.java,testUsingDashesInstead,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCaseNamingPolicyTest.java,LowerCaseNamingPolicyTest.java,testAllLowerCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCaseNamingPolicyTest.java,LowerCaseNamingPolicyTest.java,testAllUpperCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/LowerCaseNamingPolicyTest.java,LowerCaseNamingPolicyTest.java,testMixedCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testInvalidConstruction,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testLowerCaseFirstLetter,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testUpperCaseFirstLetter,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testSingleCharacterField,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testFieldStartsWithUnderscore,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testFieldStartsWithUnderscoreFollowedBySingleLetter,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testFieldHasSingleNonLetter,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/ModifyFirstLetterNamingPolicyTest.java,ModifyFirstLetterNamingPolicyTest.java,testFieldHasNoLetters,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/SerializedNameAnnotationInterceptingNamingPolicyTest.java,SerializedNameAnnotationInterceptingNamingPolicyTest.java,testFieldWithAnnotation,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/SerializedNameAnnotationInterceptingNamingPolicyTest.java,SerializedNameAnnotationInterceptingNamingPolicyTest.java,testFieldWithoutAnnotation,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCamelCaseSeparatorNamingPolicyTest.java,UpperCamelCaseSeparatorNamingPolicyTest.java,testAllLowerCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCamelCaseSeparatorNamingPolicyTest.java,UpperCamelCaseSeparatorNamingPolicyTest.java,testAllUpperCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCamelCaseSeparatorNamingPolicyTest.java,UpperCamelCaseSeparatorNamingPolicyTest.java,testAllUpperCaseExceptFirst,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCamelCaseSeparatorNamingPolicyTest.java,UpperCamelCaseSeparatorNamingPolicyTest.java,testAllUpperCaseStartingWithUnderscore,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCamelCaseSeparatorNamingPolicyTest.java,UpperCamelCaseSeparatorNamingPolicyTest.java,testMixedCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCaseNamingPolicyTest.java,UpperCaseNamingPolicyTest.java,testAllLowerCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCaseNamingPolicyTest.java,UpperCaseNamingPolicyTest.java,testAllUpperCase,concurrent obsolete
+11/20/2011 23:08:23,f89e92aa9fd4c705655dbc0b0584defc996d796f,f777a192ee13fd59048aa7ba640cc8023051c89d,jesse@swank.ca,"Tighten up some of the fields naming policy code. The main thrust of this change is replacing classes like UpperCaseNamingPolicy with the corresponding method calls. Classes like CompositeFieldNamingPolicy are replaced by sequences of method calls. This also replaces unit tests with functional tests.
+
+One nice benefit of this is a 3%/5.7KiB reduction in the size of gson.jar to 184KiB.",gson/src/test/java/com/google/gson/UpperCaseNamingPolicyTest.java,UpperCaseNamingPolicyTest.java,testMixedCase,concurrent obsolete
+11/22/2011 0:07:18,fed332906debe74d0879c77a03825b66f7970c41,0ff7d980c5430be317aca0405477dec74ab0390c,jesse@swank.ca,"Create a single, monolithic class to manage all exclusion strategies. This gets our file size within target of 177KiB.
+
+I intend to follow this up with a builder for our new class to avoid multiple-argument constructor calls.",gson/src/test/java/com/google/gson/DisjunctionExclusionStrategyTest.java,DisjunctionExclusionStrategyTest.java,testBadInstantiation,concurrent obsolete
+11/22/2011 0:07:18,fed332906debe74d0879c77a03825b66f7970c41,0ff7d980c5430be317aca0405477dec74ab0390c,jesse@swank.ca,"Create a single, monolithic class to manage all exclusion strategies. This gets our file size within target of 177KiB.
+
+I intend to follow this up with a builder for our new class to avoid multiple-argument constructor calls.",gson/src/test/java/com/google/gson/DisjunctionExclusionStrategyTest.java,DisjunctionExclusionStrategyTest.java,testSkipFieldsWithMixedTrueAndFalse,concurrent obsolete
+11/22/2011 0:07:18,fed332906debe74d0879c77a03825b66f7970c41,0ff7d980c5430be317aca0405477dec74ab0390c,jesse@swank.ca,"Create a single, monolithic class to manage all exclusion strategies. This gets our file size within target of 177KiB.
+
+I intend to follow this up with a builder for our new class to avoid multiple-argument constructor calls.",gson/src/test/java/com/google/gson/DisjunctionExclusionStrategyTest.java,DisjunctionExclusionStrategyTest.java,testSkipFieldsWithFalseOnly,concurrent obsolete
+11/22/2011 0:07:18,fed332906debe74d0879c77a03825b66f7970c41,0ff7d980c5430be317aca0405477dec74ab0390c,jesse@swank.ca,"Create a single, monolithic class to manage all exclusion strategies. This gets our file size within target of 177KiB.
+
+I intend to follow this up with a builder for our new class to avoid multiple-argument constructor calls.",gson/src/test/java/com/google/gson/VersionExclusionStrategyTest.java,VersionExclusionStrategyTest.java,testDisallowNegativeValuesAndFailFast,concurrent obsolete
+11/22/2011 1:37:13,aa2f61b7d8defddc2a78de43b8042178241daedb,fed332906debe74d0879c77a03825b66f7970c41,jesse@swank.ca,"Rename GsonExclusionStrategy to Excluder. The new class is its own factory, which simplifies its caller in GsonBuilder. It no longer implements ExclusionStrategy, which allows the callers to pass in a boolean for serialize/deserialize. This allows us to use one excluder for both code paths. The delegate ExclusionStrategy instances might end up not being shared so it has two lists internally.",gson/src/test/java/com/google/gson/FunctionWithInternalDependenciesTest.java,FunctionWithInternalDependenciesTest.java,testAnonymousLocalClassesSerialization,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/JsonDeserializerExceptionWrapperTest.java,JsonDeserializerExceptionWrapperTest.java,testRethrowJsonParseException,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/JsonDeserializerExceptionWrapperTest.java,JsonDeserializerExceptionWrapperTest.java,testWrappedExceptionPropagation,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/JsonDeserializerExceptionWrapperTest.java,JsonDeserializerExceptionWrapperTest.java,testProperSerialization,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testNullMap,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testHasGenericButNotSpecific,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testHasSpecificType,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testTypeOverridding,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testMakeUnmodifiable,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testTypeHierarchy,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testTypeHierarchyMultipleHandlers,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testReplaceExistingTypeHierarchyHandler,concurrent obsolete
+11/23/2011 0:16:55,1794182a560588973c6ec131e9c24bd39508433d,3cbe355cb6b1ab5d84ddb75837430c3d9584119b,jesse@swank.ca,"Commit to factories as the mechanism to lookup type adapters. This uses factories for type hierarchy adapters. We keep a separate list of factories for tree-style adapters registered with registerTypeHierarchyAdapter to guarantee that these come after the non-hierarchy adapters.
+
+This drops support for type hierarchy instance creators. I don't expect this to be a problem. We'll also detect fewer errors where multiple type adapters can serialize the same type. With APIs like getNextTypeAdapter, I think this might actually be an improvement!",gson/src/test/java/com/google/gson/internal/TypeMapTest.java,TypeMapTest.java,testHidingExistingTypeHierarchyHandlerIsDisallowed,concurrent obsolete
+11/26/2011 9:30:38,4c06b013697d06b327f3c537e23181887aeab774,ddde79c861cd2a3f62c33650698942cac1bb961c,jesse@swank.ca,Cache all computed type adapters. On one particularly violent test (issue 375) this improves performance by 77%.,gson/src/test/java/com/google/gson/LruCacheTest.java,LruCacheTest.java,testCacheHitAndMiss,concurrent obsolete
+11/26/2011 9:30:38,4c06b013697d06b327f3c537e23181887aeab774,ddde79c861cd2a3f62c33650698942cac1bb961c,jesse@swank.ca,Cache all computed type adapters. On one particularly violent test (issue 375) this improves performance by 77%.,gson/src/test/java/com/google/gson/LruCacheTest.java,LruCacheTest.java,testCacheKeyOverwrite,concurrent obsolete
+11/26/2011 9:30:38,4c06b013697d06b327f3c537e23181887aeab774,ddde79c861cd2a3f62c33650698942cac1bb961c,jesse@swank.ca,Cache all computed type adapters. On one particularly violent test (issue 375) this improves performance by 77%.,gson/src/test/java/com/google/gson/LruCacheTest.java,LruCacheTest.java,testCacheEviction,concurrent obsolete
+04/12/2012 13:15:56,7b61e784c0c55870225637de639f43fe71cc2492,6d351fea073bf0795dfba4ff8fc88f9557ca8979,jesse@swank.ca,Remove testParameterizedMapSubclassDeserialization that never passed. We'll eventually add an equivalent to the extras/ package.,gson/src/test/java/com/google/gson/functional/MapTest.java,MapTest.java,testParameterizedMapSubclassDeserialization,phased obsolete
+09/04/2012 16:10:12,d1ff7bb397d10ab60136ebaedb5db9c7009cbeca,411c5c0b502401c7af381a64e94253972b7db5f2,inder123@gmail.com,Deleted spurious directory gson-codegen. The real codegen code is in trunk/codegen,gson/gson-codegen/src/test/java/com/google/gson/codegen/functional/CodeGenFunctionalTest.java,CodeGenFunctionalTest.java,testGeneratedJson,concurrent obsolete
+10/11/2012 15:29:40,714ac8e64399eb156abc4ce3e517185c098fb7e6,c25278b4d6036a0e0ae758b13194813936d9e911,inder123@gmail.com,added tests for using intercept in fields and lists. These tests are currently failing.,gson/src/test/java/com/google/gson/functional/InterceptorTest.java,InterceptorTest.java,testPostDeserialize,phased obsolete
+04/04/2013 16:31:23,af6aa5f782dcfc38a060d2de9476337e14ffedcb,7d53113ebc9ef6921c6238f013aabd10890611a0,joel.leitch@gmail.com,Use the LinkedHashTreeMap instead of LinkedTreeMap and delete the LinkedTreeMap version.,gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java,LinkedTreeMapTest.java,testPutAndGet,concurrent obsolete
+04/04/2013 16:31:23,af6aa5f782dcfc38a060d2de9476337e14ffedcb,7d53113ebc9ef6921c6238f013aabd10890611a0,joel.leitch@gmail.com,Use the LinkedHashTreeMap instead of LinkedTreeMap and delete the LinkedTreeMap version.,gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java,LinkedTreeMapTest.java,testGetAndContainsNullKey,concurrent obsolete
+04/04/2013 16:31:23,af6aa5f782dcfc38a060d2de9476337e14ffedcb,7d53113ebc9ef6921c6238f013aabd10890611a0,joel.leitch@gmail.com,Use the LinkedHashTreeMap instead of LinkedTreeMap and delete the LinkedTreeMap version.,gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java,LinkedTreeMapTest.java,testDisallowPutForNullKeys,concurrent obsolete
+04/04/2013 16:31:23,af6aa5f782dcfc38a060d2de9476337e14ffedcb,7d53113ebc9ef6921c6238f013aabd10890611a0,joel.leitch@gmail.com,Use the LinkedHashTreeMap instead of LinkedTreeMap and delete the LinkedTreeMap version.,gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java,LinkedTreeMapTest.java,testSingleElement,concurrent obsolete
+04/04/2013 16:31:23,af6aa5f782dcfc38a060d2de9476337e14ffedcb,7d53113ebc9ef6921c6238f013aabd10890611a0,joel.leitch@gmail.com,Use the LinkedHashTreeMap instead of LinkedTreeMap and delete the LinkedTreeMap version.,gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java,LinkedTreeMapTest.java,testAddAndRemove,concurrent obsolete
+04/04/2013 16:31:23,af6aa5f782dcfc38a060d2de9476337e14ffedcb,7d53113ebc9ef6921c6238f013aabd10890611a0,joel.leitch@gmail.com,Use the LinkedHashTreeMap instead of LinkedTreeMap and delete the LinkedTreeMap version.,gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java,LinkedTreeMapTest.java,testInsertionOrderPreserved,concurrent obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testFieldAdapterInvoked,phased obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testRegisteredAdapterOverridesFieldAdapter,concurrent obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testRegisteredSerializerOverridesFieldAdapter,concurrent obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testRegisteredDeserializerOverridesFieldAdapter,concurrent obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testFieldAdapterNotInvokedIfNull,phased obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testNonStaticFieldAdapterNotInvoked,phased obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testIncorrectTypeAdapterNotInvoked,phased obsolete
+03/09/2014 1:30:37,b9998e511f3a3c19d52c104d66d78037eaff88ec,bf549f0589105a42f159c78a621fc28087561d16,inder123@gmail.com,deleted support for the magic GSON_TYPE_ADAPTER field,gson/src/test/java/com/google/gson/functional/GsonFieldTypeAdapterTest.java,GsonFieldTypeAdapterTest.java,testSuperclassTypeAdapterNotInvoked,phased obsolete
+09/17/2021 19:21:37,26a1928277f7eba70609f02697509ba9258dd8ef,f1f90313fc22c122a28716e7ecac1543e6fa253e,noreply@github.com,"Fix `RuntimeTypeAdapterFactory` depending on internal `Streams` class (#1959)
+
+* Fix RuntimeTypeAdapterFactory depending on internal Streams class
+
+* Clean up gson-extras project, make it Maven module of gson-parent
+
+* Remove broken test from GraphAdapterBuilderTest",extras/src/test/java/com/google/gson/graph/GraphAdapterBuilderTest.java,GraphAdapterBuilderTest.java,testSerializationDirectSelfReference,phased obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testIterationOrder,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testRemoveRootDoesNotDoubleUnlink,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testPutNullKeyFails,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testPutNonComparableKeyFails,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testContainsNonComparableKeyReturnsFalse,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testContainsNullKeyIsAlwaysFalse,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testPutOverrides,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testEmptyStringValues,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testForceDoublingAndRehash,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testClear,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testEqualsAndHashCode,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testAvlWalker,phased obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testDoubleCapacity,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testDoubleCapacityAllNodesOnLeft,concurrent obsolete
+11/01/2021 17:09:14,e0de45ff69ba3daacc3b7623cc74fc69a4eaf6d0,b4dab86b105c85e6b7d7106c9ff11e3e923e3485,noreply@github.com,"Delete unused LinkedHashTreeMap (#1992)
+
+Class seems to be unused since commit f29d5bc37b52c4b8d2ad15a10bb0c7f684c1d45d.
+Gson currently only uses LinkedTreeMap.",gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java,LinkedHashTreeMapTest.java,testJavaSerialization,concurrent obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java,ThrowableFunctionalTest.java,testExceptionWithoutCause,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java,ThrowableFunctionalTest.java,testExceptionWithCause,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java,ThrowableFunctionalTest.java,testSerializedNameOnExceptionFields,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java,ThrowableFunctionalTest.java,testErrorWithoutCause,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java,ThrowableFunctionalTest.java,testErrornWithCause,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/internal/bind/RecursiveTypesResolveTest.java,RecursiveTypesResolveTest.java,testIssue603PrintStream,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/internal/bind/RecursiveTypesResolveTest.java,RecursiveTypesResolveTest.java,testIssue440WeakReference,phased obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/internal/reflect/UnsafeReflectionAccessorTest.java,UnsafeReflectionAccessorTest.java,testMakeAccessibleWithUnsafe,concurrent obsolete
+11/09/2021 9:16:35,b0595c595bd2c052cd05e0283bb37b67c02bd06f,0d9f6b677ae67cbd749ebca817139041d1977831,noreply@github.com,"Fix failing to serialize Collection or Map with inaccessible constructor (#1902)
+
+* Remove UnsafeReflectionAccessor
+
+Revert #1218
+
+Usage of sun.misc.Unsafe to change internal AccessibleObject.override field
+to suppress JPMS warnings goes against the intentions of the JPMS and does not
+work anymore in newer versions, see #1540.
+Therefore remove it and instead create a descriptive exception when making a
+member accessible fails. If necessary users can also still use `java` command
+line flags to open external modules.
+
+* Fix failing to serialize Collection or Map with inaccessible constructor
+
+Also remove tests which rely on Java implementation details.
+
+* Don't keep reference to access exception of ConstructorConstructor
+
+This also avoids a confusing stack trace, since the previously caught
+exception might have had a complete unrelated stack trace.
+
+* Remove Maven toolchain requirement
+
+* Address review feedback
+
+* Add back test for Security Manager",gson/src/test/java/com/google/gson/internal/reflect/UnsafeReflectionAccessorTest.java,UnsafeReflectionAccessorTest.java,testMakeAccessibleWithRestrictiveSecurityManager,concurrent obsolete
+04/03/2022 22:00:54,b2b1424582f973457e15f4eeba35cd3c0c0ed2b6,774c751a9ee026c6d7e4b0ca44dac6ad526de557,noreply@github.com,"codegen removal (#2099)
+
+* Delete CodeGenFunctionalTest.java
+
+* codegen removal
+
+* pom.xml update
+
+* email config
+
+* Remove unnecessary space change.
+
+Co-authored-by: Éamonn McManus <emcmanus@google.com>",codegen/src/test/java/com/google/gson/codegen/functional/CodeGenFunctionalTest.java,CodeGenFunctionalTest.java,testGeneratedJson,concurrent obsolete
+07/29/2022 12:10:54,6d2557d5d1a8ac498f2bcee20e5053c93b33ecce,2deb2099d3007b8bb0e324bc364b6f9dddada0cd,noreply@github.com,Remove unused package-private FieldAttributes methods (#2162),gson/src/test/java/com/google/gson/FieldAttributesTest.java,FieldAttributesTest.java,testIsSynthetic,concurrent obsolete
+08/07/2022 18:00:35,9eb04414c0a7f201d039cdbf9a9ebc4144990d3f,76c78f5925ec80434cbbd28332f841f74fee3275,noreply@github.com,"Improve InternationalizationTest (#1705)
+
+* Improve InternationalizationTest
+
+- Remove ""raw"" tests since after compiling they are the same as the one with
+  escape sequences
+- Add tests for supplementary code points (> \uFFFF)
+
+* Improve variable names, fix incorrect escape sequences",gson/src/test/java/com/google/gson/functional/InternationalizationTest.java,InternationalizationTest.java,testStringsWithRawChineseCharactersDeserialization,phased obsolete

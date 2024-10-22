@@ -1,0 +1,457 @@
+Datetime,Hash,Parent,Author,Commit Msg,Filepath,Filename,Removed Test Case,Test Run,Test Fail Reason
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetDateTimeInstance,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetPattern,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetChronology,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetTimeZone,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetLocale,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetPrinter,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetParser,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testEstimatePrintedLength,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintToSLL,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintToWLL,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintToSBRI,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintToSBL,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintToWRI,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintToWL,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintRI,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testPrintL,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testEstimateParsedLength,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testParseIntoPBSI,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testParseIntoRWIS,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testParseIntoRWISI,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testParseS,failed,assertion failure
+12/18/2003 20:07:36,0e07ac6b2cff63550d7df336355ca63cc05aa40b,1ba4f9861a0cfbc32c56efced3619874a43ec5dd,scolebourne@joda.org,"Move from Joda CVS
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@10 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testParseSL,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetInstanceTZ,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetInstanceTZL,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetInstanceC,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetInstanceCL,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testForPattern,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testForStyle,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormat.java,TestDateTimeFormat.java,testGetPatternForStyle,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testToPrinter,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testToParser,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testToFormatter,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testCanBuildPrinter,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testCanBuildParser,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testCanBuilderFormatter,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testClear,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDTF,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDTPE,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendLiteralC,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendLiteralS,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendNumeric,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendSignedNumeric,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendFraction,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendFractionOfSecond,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendFractionOfMinute,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendFractionOfHour,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendFractionOfDay,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMillisOfSecond,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMillisOfDay,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendSecondOfMinute,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendSecondOfDay,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMinuteOfHour,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMinuteOfDay,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendHourOfDay,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendClockhourOfDay,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendHourOfHalfday,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendClockhourOfHalfday,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDayOfWeek,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDayOfMonth,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDayOfYear,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendWeekOfYearWeek,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendWeekOfYearYear,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMonthOfYear,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendYear,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendYearOfEra,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendYearOfCentury,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendCentury,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendCenturyOfEra,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendAmPmSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDayOfWeekSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendDayOfWeekShortSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMonthOfYearSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendMonthOfYearShortSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendEraSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendTimeZoneSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendTimeZoneShortSymbol,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendTimeZoneOffset,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeFormatterBuilder.java,TestDateTimeFormatterBuilder.java,testAppendPattern,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testSetMillis,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testSaveField,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testSetTimeZone,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testSetTimeZoneOffset,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testGetTimeZone,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testGetTimeZoneOffset,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestDateTimeParserBucket.java,TestDateTimeParserBucket.java,testComputeMillis,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testClone,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testFormat,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetMillis,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetStartInstant,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetEndInstant,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testToTimePeriod,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetTotalSeconds,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetTotalMinutes,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetTotalHours,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetTotalDays,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetTotalMonths,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetTotalWeeks,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetSeconds,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetMinutes,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetHours,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetDays,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetMonths,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testGetYears,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testEquals,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testHashCode,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testCompareTo,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testIsLongerThan,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testIsShorterThan,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriod.java,TestTimePeriod.java,testToString,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriodFormat.java,TestTimePeriodFormat.java,testFormat,failed,assertion failure
+12/20/2003 8:11:23,acc5016243117465b83621ea5ff31ae76163d3b8,f1a476f463c62b736e4a641aba4c59d9629814d1,scolebourne@joda.org,"Remove usused tests
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@31 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestTimePeriodFormat.java,TestTimePeriodFormat.java,testParseObject,failed,assertion failure
+07/27/2004 17:21:14,d3c4efa48ca55da45286072b98aa229839d0b1ed,d21736df31ca4888e76ccbdc7d31f406cf68b645,scolebourne@joda.org,"Remove old test classes
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@350 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestMDTAdd.java,TestMDTAdd.java,testAddMillis,failed,assertion failure
+07/27/2004 17:21:14,d3c4efa48ca55da45286072b98aa229839d0b1ed,d21736df31ca4888e76ccbdc7d31f406cf68b645,scolebourne@joda.org,"Remove old test classes
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@350 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestMDTAddWrapped.java,TestMDTAddWrapped.java,testFailure,failed,assertion failure
+08/22/2004 10:25:24,3877455129a7ee0c1c50ff3a4cf9116732a26862,6bdd176eed470329a73d7ee08498183e579cea60,scolebourne@joda.org,"Remove old test classes
+
+
+git-svn-id: https://joda-time.svn.sourceforge.net/svnroot/joda-time/trunk@433 1e1cfbb7-5c0e-0410-a2f0-f98d92ec03a1",JodaTime/src/test/org/joda/test/time/TestBuddhistChronology.java,TestBuddhistChronology.java,testWeekOfYearYear,failed,assertion fail
