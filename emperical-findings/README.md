@@ -64,7 +64,7 @@ Graphs used for version are located [here](/emperical-findings/rq2/version/) and
 
 We analyzed the deleted tests to determine if they were deleted along with class or individually. The compiled results can be found [here](/emperical-findings/rq4/data/results.csv).
 
-<img src="/emperical-findings/rq4/img/testdeletion-granularity.png" width="500" />
+<img src="/emperical-findings/rq3/img/test-deletion-granularity.png" width="500" />
 
 
 ## RQ4: Why do developers delete tests?
@@ -95,7 +95,7 @@ Note: CSV files also contains branch coverage, line coverage, and mutation score
 
 Reasons for test deletions:
 
-<img src="/emperical-findings/rq4/img/delted-test-categories.png" width="500" />
+<img src="/emperical-findings/rq4/img/deleted-test-categories.png" width="500" />
 
 
 Coverage & Mutation Loss by Redundant Tests:
@@ -132,9 +132,9 @@ Results for `loose` scenario:
 
 Percentage of deleted test classes excluded in reduced test suites:
 
-<img src="/emperical-findings/rq5/FASTR-percentage-of-deleted-test-classes.png" width="1100" />
+<img src="/emperical-findings/rq5/FASTR-percentage-of-deleted-test-classes.png" width="700" />
 
 Percentage of redundant tests excluded in reduced test suites:
 
-<img src="/emperical-findings/rq5/FASTR-percentage-of-redundant-tests.png" width="1100" />
+<img src="/emperical-findings/rq5/FASTR-percentage-of-redundant-tests.png" width="700" />
 

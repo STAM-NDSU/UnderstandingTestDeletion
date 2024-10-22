@@ -16,7 +16,7 @@ The repository is divided into three groups:
 
 - [**FAST**](/FAST/) : This section focuses on evaluating the effectiveness of FAST-R approaches in identifying developer deleted redundant tests. Includes input, configuration, artifacts, and scripts essential for conducting the evaluation.
 
-- [**emperical-findings**](/emperical-findings/) : This section contains the emperical findings of our study.
+- [**emperical-findings**](/emperical-findings/) : This section contains the emperical findings of our study. Results of each RQ is explained in detail [here](/emperical-findings/README.md).
 
 ## Directory Structure
 
