@@ -2,9 +2,9 @@
 
 The artifact repository for the paper titled:
 
-> Understanding Test Deletion in Continuous Integgration  
-> _Authors:_  
-> _Conference:_
+> Understanding Test Deletion in Java Applications  
+> _Authors:_Suraj Bhatta, Frank Kendemah, Ajay Kumar Jha  
+> _Conference:_22nd IEEE/ACM International Conference on Mining Software Repositories (MSR). 2025
 
 In this paper, we establish a dataset comprising 24,431 manually confirmed developer deleted tests spanning 2,125 test deletion commits across 7 open-source projects. Furthermore, we conduct an evaluation of the effectiveness of FAST-R approaches in identifying developer deleted redundant tests for permanent test deletion. The projects studied include: [gson](https://github.com/google/gson.git), [commons-lang](https://github.com/apache/commons-lang.git), [commons-math](https://github.com/apache/commons-math.git), [pmd](https://github.com/pmd/pmd.git), [jfreechart](https://github.com/jfree/jfreechart.git), [joda-time](https://github.com/JodaOrg/joda-time.git) and [cts](https://android.googlesource.com/platform/cts).
 
